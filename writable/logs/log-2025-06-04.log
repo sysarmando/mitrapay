@@ -1,0 +1,39 @@
+CRITICAL - 2025-06-04 13:41:32 --> Error: Call to undefined method Endroid\QrCode\Builder\Builder::create()
+[Method: GET, Route: antrian/download/28]
+in APPPATH\Controllers\Antrian.php on line 132.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Antrian->download('28')
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Antrian))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(54): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-04 13:46:57 --> Error: Call to undefined method Endroid\QrCode\QrCode::create()
+[Method: GET, Route: antrian/download/28]
+in APPPATH\Controllers\Antrian.php on line 125.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Antrian->download('28')
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Antrian))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(54): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-04 13:49:17 --> Error: Call to undefined method Endroid\QrCode\QrCode::setSize()
+[Method: GET, Route: antrian/download/28]
+in APPPATH\Controllers\Antrian.php on line 131.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Antrian->download('28')
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Antrian))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(54): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-04 13:59:00 --> Exception: Unable to generate image: please check if the GD extension is enabled and configured correctly
+[Method: GET, Route: antrian/download/28]
+in VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php on line 33.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\PngWriter.php(31): Endroid\QrCode\Writer\AbstractGdWriter->write(Object(Endroid\QrCode\QrCode), null, null, [...])
+ 2 VENDORPATH\endroid\qr-code\src\Builder\Builder.php(120): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode), null, null, [...])
+ 3 APPPATH\Controllers\Antrian.php(149): Endroid\QrCode\Builder\Builder->build()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Antrian->download('28')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Antrian))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(54): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

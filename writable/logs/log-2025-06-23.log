@@ -1,0 +1,1542 @@
+DEBUG - 2025-06-23 14:50:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-23 14:50:16 --> ErrorException: Undefined variable $title
+[Method: GET, Route: admin/import-mitra]
+in APPPATH\Views\templates\parts\head.php on line 2.
+ 1 APPPATH\Views\templates\parts\head.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'D:\\xampp\\htdocs\\mitra\\app\\Views\\templates\\parts\\head.php', 2)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\mitra\\app\\Views\\templates\\parts\\head.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('templates/parts/head', null, true)
+ 5 APPPATH\Views\templates\adminlte.php(5): CodeIgniter\View\View->include('templates/parts/head')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\mitra\\app\\Views\\templates\\adminlte.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('templates/adminlte', [], true)
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/import_mitra', [], true)
+10 APPPATH\Controllers\Admin.php(12): view('admin/import_mitra')
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->importMitraForm()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-23 14:51:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-23 14:51:43 --> ErrorException: Undefined variable $role_user
+[Method: GET, Route: admin/import-mitra]
+in APPPATH\Views\templates\sidebar.php on line 27.
+ 1 APPPATH\Views\templates\sidebar.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $role_user', 'D:\\xampp\\htdocs\\mitra\\app\\Views\\templates\\sidebar.php', 27)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\mitra\\app\\Views\\templates\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('templates/sidebar', null, true)
+ 5 APPPATH\Views\templates\adminlte.php(11): CodeIgniter\View\View->include('templates/sidebar')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\mitra\\app\\Views\\templates\\adminlte.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('templates/adminlte', [], true)
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/import_mitra', [], true)
+10 APPPATH\Controllers\Admin.php(15): view('admin/import_mitra', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->importMitraForm()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-23 14:52:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 14:53:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 14:53:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 14:53:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 15:12:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-23 15:12:37 --> mysqli_sql_exception: Table 'user_auth.mitra' doesn't exist in D:\xampp\htdocs\mitra\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\xampp\htdocs\mitra\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `mi...', 0)
+#1 D:\xampp\htdocs\mitra\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `mi...')
+#2 D:\xampp\htdocs\mitra\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `mi...')
+#3 D:\xampp\htdocs\mitra\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mi...', Array, false)
+#4 D:\xampp\htdocs\mitra\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\xampp\htdocs\mitra\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 D:\xampp\htdocs\mitra\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\xampp\htdocs\mitra\app\Controllers\Admin.php(55): CodeIgniter\Model->insert(Array)
+#8 D:\xampp\htdocs\mitra\system\CodeIgniter.php(933): App\Controllers\Admin->importMitra()
+#9 D:\xampp\htdocs\mitra\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 D:\xampp\htdocs\mitra\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\mitra\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\mitra\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\mitra\public\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-06-23 15:12:37 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'user_auth.mitra' doesn't exist
+[Method: POST, Route: admin/import-mitra]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mitra` (`nama_lengkap`, `posisi`, `alamat`, `kab`, `kec`, `desa`, `jk`, `no_hp`, `sobat_id`, `email`, `tahun`, `created_at`, `updated_at`) VALUES (:nama_lengkap:, :posisi:, :alamat:, :kab:, :kec:, :desa:, :jk:, :no_hp:, :sobat_id:, :email:, :tahun:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Admin.php(55): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->importMitra()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 15:12:37 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'user_auth.mitra' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `mitra` (`nama_lengkap`, `posisi`, `alamat`, `kab`, `kec`, `desa`, `jk`, `no_hp`, `sobat_id`, `email`, `tahun`, `created_at`, `updated_at`) VALUES (\'Benoni Andre Erickson Serhalawan\', \'2\', \'Benteng Atas RT.002 RW.003\', \'71\', \'010\', \'005\', \'1\', \'+62 852-4309-2612\', \'817123110058\', \'benoniserhalawan@yahoo.com\', \'2025\', \'2025-06-23 15:12:37\', \'2025-06-23 15:12:37\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `mitra` (`nama_lengkap`, `posisi`, `alamat`, `kab`, `kec`, `desa`, `jk`, `no_hp`, `sobat_id`, `email`, `tahun`, `created_at`, `updated_at`) VALUES (\'Benoni Andre Erickson Serhalawan\', \'2\', \'Benteng Atas RT.002 RW.003\', \'71\', \'010\', \'005\', \'1\', \'+62 852-4309-2612\', \'817123110058\', \'benoniserhalawan@yahoo.com\', \'2025\', \'2025-06-23 15:12:37\', \'2025-06-23 15:12:37\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mitra` (`nama_lengkap`, `posisi`, `alamat`, `kab`, `kec`, `desa`, `jk`, `no_hp`, `sobat_id`, `email`, `tahun`, `created_at`, `updated_at`) VALUES (:nama_lengkap:, :posisi:, :alamat:, :kab:, :kec:, :desa:, :jk:, :no_hp:, :sobat_id:, :email:, :tahun:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Admin.php(55): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->importMitra()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 15:12:37 --> [Caused by] mysqli_sql_exception: Table 'user_auth.mitra' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `mitra` (`nama_lengkap`, `posisi`, `alamat`, `kab`, `kec`, `desa`, `jk`, `no_hp`, `sobat_id`, `email`, `tahun`, `created_at`, `updated_at`) VALUES (\'Benoni Andre Erickson Serhalawan\', \'2\', \'Benteng Atas RT.002 RW.003\', \'71\', \'010\', \'005\', \'1\', \'+62 852-4309-2612\', \'817123110058\', \'benoniserhalawan@yahoo.com\', \'2025\', \'2025-06-23 15:12:37\', \'2025-06-23 15:12:37\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `mitra` (`nama_lengkap`, `posisi`, `alamat`, `kab`, `kec`, `desa`, `jk`, `no_hp`, `sobat_id`, `email`, `tahun`, `created_at`, `updated_at`) VALUES (\'Benoni Andre Erickson Serhalawan\', \'2\', \'Benteng Atas RT.002 RW.003\', \'71\', \'010\', \'005\', \'1\', \'+62 852-4309-2612\', \'817123110058\', \'benoniserhalawan@yahoo.com\', \'2025\', \'2025-06-23 15:12:37\', \'2025-06-23 15:12:37\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `mitra` (`nama_lengkap`, `posisi`, `alamat`, `kab`, `kec`, `desa`, `jk`, `no_hp`, `sobat_id`, `email`, `tahun`, `created_at`, `updated_at`) VALUES (\'Benoni Andre Erickson Serhalawan\', \'2\', \'Benteng Atas RT.002 RW.003\', \'71\', \'010\', \'005\', \'1\', \'+62 852-4309-2612\', \'817123110058\', \'benoniserhalawan@yahoo.com\', \'2025\', \'2025-06-23 15:12:37\', \'2025-06-23 15:12:37\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mitra` (`nama_lengkap`, `posisi`, `alamat`, `kab`, `kec`, `desa`, `jk`, `no_hp`, `sobat_id`, `email`, `tahun`, `created_at`, `updated_at`) VALUES (:nama_lengkap:, :posisi:, :alamat:, :kab:, :kec:, :desa:, :jk:, :no_hp:, :sobat_id:, :email:, :tahun:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Admin.php(55): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->importMitra()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-23 15:12:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-23 15:13:41 --> mysqli_sql_exception: Table 'user_auth.mitra' doesn't exist in D:\xampp\htdocs\mitra\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\xampp\htdocs\mitra\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `mi...', 0)
+#1 D:\xampp\htdocs\mitra\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `mi...')
+#2 D:\xampp\htdocs\mitra\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `mi...')
+#3 D:\xampp\htdocs\mitra\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mi...', Array, false)
+#4 D:\xampp\htdocs\mitra\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\xampp\htdocs\mitra\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 D:\xampp\htdocs\mitra\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\xampp\htdocs\mitra\app\Controllers\Admin.php(55): CodeIgniter\Model->insert(Array)
+#8 D:\xampp\htdocs\mitra\system\CodeIgniter.php(933): App\Controllers\Admin->importMitra()
+#9 D:\xampp\htdocs\mitra\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 D:\xampp\htdocs\mitra\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\mitra\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\mitra\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\mitra\public\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-06-23 15:13:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'user_auth.mitra' doesn't exist
+[Method: POST, Route: admin/import-mitra]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mitra` (`nama_lengkap`, `posisi`, `alamat`, `kab`, `kec`, `desa`, `jk`, `no_hp`, `sobat_id`, `email`, `tahun`, `created_at`, `updated_at`) VALUES (:nama_lengkap:, :posisi:, :alamat:, :kab:, :kec:, :desa:, :jk:, :no_hp:, :sobat_id:, :email:, :tahun:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Admin.php(55): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->importMitra()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 15:13:41 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'user_auth.mitra' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `mitra` (`nama_lengkap`, `posisi`, `alamat`, `kab`, `kec`, `desa`, `jk`, `no_hp`, `sobat_id`, `email`, `tahun`, `created_at`, `updated_at`) VALUES (\'Benoni Andre Erickson Serhalawan\', \'2\', \'Benteng Atas RT.002 RW.003\', \'71\', \'010\', \'005\', \'1\', \'+62 852-4309-2612\', \'817123110058\', \'benoniserhalawan@yahoo.com\', \'2025\', \'2025-06-23 15:13:41\', \'2025-06-23 15:13:41\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `mitra` (`nama_lengkap`, `posisi`, `alamat`, `kab`, `kec`, `desa`, `jk`, `no_hp`, `sobat_id`, `email`, `tahun`, `created_at`, `updated_at`) VALUES (\'Benoni Andre Erickson Serhalawan\', \'2\', \'Benteng Atas RT.002 RW.003\', \'71\', \'010\', \'005\', \'1\', \'+62 852-4309-2612\', \'817123110058\', \'benoniserhalawan@yahoo.com\', \'2025\', \'2025-06-23 15:13:41\', \'2025-06-23 15:13:41\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mitra` (`nama_lengkap`, `posisi`, `alamat`, `kab`, `kec`, `desa`, `jk`, `no_hp`, `sobat_id`, `email`, `tahun`, `created_at`, `updated_at`) VALUES (:nama_lengkap:, :posisi:, :alamat:, :kab:, :kec:, :desa:, :jk:, :no_hp:, :sobat_id:, :email:, :tahun:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Admin.php(55): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->importMitra()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 15:13:41 --> [Caused by] mysqli_sql_exception: Table 'user_auth.mitra' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `mitra` (`nama_lengkap`, `posisi`, `alamat`, `kab`, `kec`, `desa`, `jk`, `no_hp`, `sobat_id`, `email`, `tahun`, `created_at`, `updated_at`) VALUES (\'Benoni Andre Erickson Serhalawan\', \'2\', \'Benteng Atas RT.002 RW.003\', \'71\', \'010\', \'005\', \'1\', \'+62 852-4309-2612\', \'817123110058\', \'benoniserhalawan@yahoo.com\', \'2025\', \'2025-06-23 15:13:41\', \'2025-06-23 15:13:41\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `mitra` (`nama_lengkap`, `posisi`, `alamat`, `kab`, `kec`, `desa`, `jk`, `no_hp`, `sobat_id`, `email`, `tahun`, `created_at`, `updated_at`) VALUES (\'Benoni Andre Erickson Serhalawan\', \'2\', \'Benteng Atas RT.002 RW.003\', \'71\', \'010\', \'005\', \'1\', \'+62 852-4309-2612\', \'817123110058\', \'benoniserhalawan@yahoo.com\', \'2025\', \'2025-06-23 15:13:41\', \'2025-06-23 15:13:41\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `mitra` (`nama_lengkap`, `posisi`, `alamat`, `kab`, `kec`, `desa`, `jk`, `no_hp`, `sobat_id`, `email`, `tahun`, `created_at`, `updated_at`) VALUES (\'Benoni Andre Erickson Serhalawan\', \'2\', \'Benteng Atas RT.002 RW.003\', \'71\', \'010\', \'005\', \'1\', \'+62 852-4309-2612\', \'817123110058\', \'benoniserhalawan@yahoo.com\', \'2025\', \'2025-06-23 15:13:41\', \'2025-06-23 15:13:41\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mitra` (`nama_lengkap`, `posisi`, `alamat`, `kab`, `kec`, `desa`, `jk`, `no_hp`, `sobat_id`, `email`, `tahun`, `created_at`, `updated_at`) VALUES (:nama_lengkap:, :posisi:, :alamat:, :kab:, :kec:, :desa:, :jk:, :no_hp:, :sobat_id:, :email:, :tahun:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Admin.php(55): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->importMitra()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-23 15:15:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-23 15:15:56 --> mysqli_sql_exception: Unknown column 'sobat_id' in 'field list' in D:\xampp\htdocs\mitra\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\xampp\htdocs\mitra\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `mi...', 0)
+#1 D:\xampp\htdocs\mitra\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `mi...')
+#2 D:\xampp\htdocs\mitra\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `mi...')
+#3 D:\xampp\htdocs\mitra\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mi...', Array, false)
+#4 D:\xampp\htdocs\mitra\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\xampp\htdocs\mitra\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 D:\xampp\htdocs\mitra\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\xampp\htdocs\mitra\app\Controllers\Admin.php(55): CodeIgniter\Model->insert(Array)
+#8 D:\xampp\htdocs\mitra\system\CodeIgniter.php(933): App\Controllers\Admin->importMitra()
+#9 D:\xampp\htdocs\mitra\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 D:\xampp\htdocs\mitra\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\mitra\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\mitra\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\mitra\public\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-06-23 15:15:56 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'sobat_id' in 'field list'
+[Method: POST, Route: admin/import-mitra]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mitra` (`nama_lengkap`, `posisi`, `alamat`, `kab`, `kec`, `desa`, `jk`, `no_hp`, `sobat_id`, `email`, `tahun`, `created_at`, `updated_at`) VALUES (:nama_lengkap:, :posisi:, :alamat:, :kab:, :kec:, :desa:, :jk:, :no_hp:, :sobat_id:, :email:, :tahun:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Admin.php(55): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->importMitra()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 15:15:56 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'sobat_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `mitra` (`nama_lengkap`, `posisi`, `alamat`, `kab`, `kec`, `desa`, `jk`, `no_hp`, `sobat_id`, `email`, `tahun`, `created_at`, `updated_at`) VALUES (\'Benoni Andre Erickson Serhalawan\', \'2\', \'Benteng Atas RT.002 RW.003\', \'71\', \'010\', \'005\', \'1\', \'+62 852-4309-2612\', \'817123110058\', \'benoniserhalawan@yahoo.com\', \'2025\', \'2025-06-23 15:15:56\', \'2025-06-23 15:15:56\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `mitra` (`nama_lengkap`, `posisi`, `alamat`, `kab`, `kec`, `desa`, `jk`, `no_hp`, `sobat_id`, `email`, `tahun`, `created_at`, `updated_at`) VALUES (\'Benoni Andre Erickson Serhalawan\', \'2\', \'Benteng Atas RT.002 RW.003\', \'71\', \'010\', \'005\', \'1\', \'+62 852-4309-2612\', \'817123110058\', \'benoniserhalawan@yahoo.com\', \'2025\', \'2025-06-23 15:15:56\', \'2025-06-23 15:15:56\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mitra` (`nama_lengkap`, `posisi`, `alamat`, `kab`, `kec`, `desa`, `jk`, `no_hp`, `sobat_id`, `email`, `tahun`, `created_at`, `updated_at`) VALUES (:nama_lengkap:, :posisi:, :alamat:, :kab:, :kec:, :desa:, :jk:, :no_hp:, :sobat_id:, :email:, :tahun:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Admin.php(55): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->importMitra()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 15:15:56 --> [Caused by] mysqli_sql_exception: Unknown column 'sobat_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `mitra` (`nama_lengkap`, `posisi`, `alamat`, `kab`, `kec`, `desa`, `jk`, `no_hp`, `sobat_id`, `email`, `tahun`, `created_at`, `updated_at`) VALUES (\'Benoni Andre Erickson Serhalawan\', \'2\', \'Benteng Atas RT.002 RW.003\', \'71\', \'010\', \'005\', \'1\', \'+62 852-4309-2612\', \'817123110058\', \'benoniserhalawan@yahoo.com\', \'2025\', \'2025-06-23 15:15:56\', \'2025-06-23 15:15:56\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `mitra` (`nama_lengkap`, `posisi`, `alamat`, `kab`, `kec`, `desa`, `jk`, `no_hp`, `sobat_id`, `email`, `tahun`, `created_at`, `updated_at`) VALUES (\'Benoni Andre Erickson Serhalawan\', \'2\', \'Benteng Atas RT.002 RW.003\', \'71\', \'010\', \'005\', \'1\', \'+62 852-4309-2612\', \'817123110058\', \'benoniserhalawan@yahoo.com\', \'2025\', \'2025-06-23 15:15:56\', \'2025-06-23 15:15:56\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `mitra` (`nama_lengkap`, `posisi`, `alamat`, `kab`, `kec`, `desa`, `jk`, `no_hp`, `sobat_id`, `email`, `tahun`, `created_at`, `updated_at`) VALUES (\'Benoni Andre Erickson Serhalawan\', \'2\', \'Benteng Atas RT.002 RW.003\', \'71\', \'010\', \'005\', \'1\', \'+62 852-4309-2612\', \'817123110058\', \'benoniserhalawan@yahoo.com\', \'2025\', \'2025-06-23 15:15:56\', \'2025-06-23 15:15:56\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mitra` (`nama_lengkap`, `posisi`, `alamat`, `kab`, `kec`, `desa`, `jk`, `no_hp`, `sobat_id`, `email`, `tahun`, `created_at`, `updated_at`) VALUES (:nama_lengkap:, :posisi:, :alamat:, :kab:, :kec:, :desa:, :jk:, :no_hp:, :sobat_id:, :email:, :tahun:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Admin.php(55): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->importMitra()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-23 15:16:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-23 15:16:46 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in D:\xampp\htdocs\mitra\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\xampp\htdocs\mitra\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `mi...', 0)
+#1 D:\xampp\htdocs\mitra\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `mi...')
+#2 D:\xampp\htdocs\mitra\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `mi...')
+#3 D:\xampp\htdocs\mitra\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mi...', Array, false)
+#4 D:\xampp\htdocs\mitra\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\xampp\htdocs\mitra\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 D:\xampp\htdocs\mitra\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\xampp\htdocs\mitra\app\Controllers\Admin.php(55): CodeIgniter\Model->insert(Array)
+#8 D:\xampp\htdocs\mitra\system\CodeIgniter.php(933): App\Controllers\Admin->importMitra()
+#9 D:\xampp\htdocs\mitra\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 D:\xampp\htdocs\mitra\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\mitra\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\mitra\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\mitra\public\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-06-23 15:16:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+[Method: POST, Route: admin/import-mitra]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mitra` (`nama_lengkap`, `posisi`, `alamat`, `kab`, `kec`, `desa`, `jk`, `no_hp`, `sobat_id`, `email`, `tahun`, `created_at`, `updated_at`) VALUES (:nama_lengkap:, :posisi:, :alamat:, :kab:, :kec:, :desa:, :jk:, :no_hp:, :sobat_id:, :email:, :tahun:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Admin.php(55): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->importMitra()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 15:16:46 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `mitra` (`nama_lengkap`, `posisi`, `alamat`, `kab`, `kec`, `desa`, `jk`, `no_hp`, `sobat_id`, `email`, `tahun`, `created_at`, `updated_at`) VALUES (\'Benoni Andre Erickson Serhalawan\', \'2\', \'Benteng Atas RT.002 RW.003\', \'71\', \'010\', \'005\', \'1\', \'+62 852-4309-2612\', \'817123110058\', \'benoniserhalawan@yahoo.com\', \'2025\', \'2025-06-23 15:16:46\', \'2025-06-23 15:16:46\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `mitra` (`nama_lengkap`, `posisi`, `alamat`, `kab`, `kec`, `desa`, `jk`, `no_hp`, `sobat_id`, `email`, `tahun`, `created_at`, `updated_at`) VALUES (\'Benoni Andre Erickson Serhalawan\', \'2\', \'Benteng Atas RT.002 RW.003\', \'71\', \'010\', \'005\', \'1\', \'+62 852-4309-2612\', \'817123110058\', \'benoniserhalawan@yahoo.com\', \'2025\', \'2025-06-23 15:16:46\', \'2025-06-23 15:16:46\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mitra` (`nama_lengkap`, `posisi`, `alamat`, `kab`, `kec`, `desa`, `jk`, `no_hp`, `sobat_id`, `email`, `tahun`, `created_at`, `updated_at`) VALUES (:nama_lengkap:, :posisi:, :alamat:, :kab:, :kec:, :desa:, :jk:, :no_hp:, :sobat_id:, :email:, :tahun:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Admin.php(55): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->importMitra()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 15:16:46 --> [Caused by] mysqli_sql_exception: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `mitra` (`nama_lengkap`, `posisi`, `alamat`, `kab`, `kec`, `desa`, `jk`, `no_hp`, `sobat_id`, `email`, `tahun`, `created_at`, `updated_at`) VALUES (\'Benoni Andre Erickson Serhalawan\', \'2\', \'Benteng Atas RT.002 RW.003\', \'71\', \'010\', \'005\', \'1\', \'+62 852-4309-2612\', \'817123110058\', \'benoniserhalawan@yahoo.com\', \'2025\', \'2025-06-23 15:16:46\', \'2025-06-23 15:16:46\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `mitra` (`nama_lengkap`, `posisi`, `alamat`, `kab`, `kec`, `desa`, `jk`, `no_hp`, `sobat_id`, `email`, `tahun`, `created_at`, `updated_at`) VALUES (\'Benoni Andre Erickson Serhalawan\', \'2\', \'Benteng Atas RT.002 RW.003\', \'71\', \'010\', \'005\', \'1\', \'+62 852-4309-2612\', \'817123110058\', \'benoniserhalawan@yahoo.com\', \'2025\', \'2025-06-23 15:16:46\', \'2025-06-23 15:16:46\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `mitra` (`nama_lengkap`, `posisi`, `alamat`, `kab`, `kec`, `desa`, `jk`, `no_hp`, `sobat_id`, `email`, `tahun`, `created_at`, `updated_at`) VALUES (\'Benoni Andre Erickson Serhalawan\', \'2\', \'Benteng Atas RT.002 RW.003\', \'71\', \'010\', \'005\', \'1\', \'+62 852-4309-2612\', \'817123110058\', \'benoniserhalawan@yahoo.com\', \'2025\', \'2025-06-23 15:16:46\', \'2025-06-23 15:16:46\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mitra` (`nama_lengkap`, `posisi`, `alamat`, `kab`, `kec`, `desa`, `jk`, `no_hp`, `sobat_id`, `email`, `tahun`, `created_at`, `updated_at`) VALUES (:nama_lengkap:, :posisi:, :alamat:, :kab:, :kec:, :desa:, :jk:, :no_hp:, :sobat_id:, :email:, :tahun:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Admin.php(55): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->importMitra()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-23 15:16:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-23 15:17:17 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in D:\xampp\htdocs\mitra\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\xampp\htdocs\mitra\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `mi...', 0)
+#1 D:\xampp\htdocs\mitra\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `mi...')
+#2 D:\xampp\htdocs\mitra\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `mi...')
+#3 D:\xampp\htdocs\mitra\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mi...', Array, false)
+#4 D:\xampp\htdocs\mitra\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\xampp\htdocs\mitra\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 D:\xampp\htdocs\mitra\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\xampp\htdocs\mitra\app\Controllers\Admin.php(55): CodeIgniter\Model->insert(Array)
+#8 D:\xampp\htdocs\mitra\system\CodeIgniter.php(933): App\Controllers\Admin->importMitra()
+#9 D:\xampp\htdocs\mitra\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 D:\xampp\htdocs\mitra\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\mitra\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\mitra\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\mitra\public\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-06-23 15:17:17 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'updated_at' in 'field list'
+[Method: POST, Route: admin/import-mitra]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mitra` (`nama_lengkap`, `posisi`, `alamat`, `kab`, `kec`, `desa`, `jk`, `no_hp`, `sobat_id`, `email`, `tahun`, `created_at`, `updated_at`) VALUES (:nama_lengkap:, :posisi:, :alamat:, :kab:, :kec:, :desa:, :jk:, :no_hp:, :sobat_id:, :email:, :tahun:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Admin.php(55): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->importMitra()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 15:17:17 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `mitra` (`nama_lengkap`, `posisi`, `alamat`, `kab`, `kec`, `desa`, `jk`, `no_hp`, `sobat_id`, `email`, `tahun`, `created_at`, `updated_at`) VALUES (\'Benoni Andre Erickson Serhalawan\', \'2\', \'Benteng Atas RT.002 RW.003\', \'71\', \'010\', \'005\', \'1\', \'+62 852-4309-2612\', \'817123110058\', \'benoniserhalawan@yahoo.com\', \'2025\', \'2025-06-23 15:17:17\', \'2025-06-23 15:17:17\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `mitra` (`nama_lengkap`, `posisi`, `alamat`, `kab`, `kec`, `desa`, `jk`, `no_hp`, `sobat_id`, `email`, `tahun`, `created_at`, `updated_at`) VALUES (\'Benoni Andre Erickson Serhalawan\', \'2\', \'Benteng Atas RT.002 RW.003\', \'71\', \'010\', \'005\', \'1\', \'+62 852-4309-2612\', \'817123110058\', \'benoniserhalawan@yahoo.com\', \'2025\', \'2025-06-23 15:17:17\', \'2025-06-23 15:17:17\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mitra` (`nama_lengkap`, `posisi`, `alamat`, `kab`, `kec`, `desa`, `jk`, `no_hp`, `sobat_id`, `email`, `tahun`, `created_at`, `updated_at`) VALUES (:nama_lengkap:, :posisi:, :alamat:, :kab:, :kec:, :desa:, :jk:, :no_hp:, :sobat_id:, :email:, :tahun:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Admin.php(55): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->importMitra()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 15:17:17 --> [Caused by] mysqli_sql_exception: Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `mitra` (`nama_lengkap`, `posisi`, `alamat`, `kab`, `kec`, `desa`, `jk`, `no_hp`, `sobat_id`, `email`, `tahun`, `created_at`, `updated_at`) VALUES (\'Benoni Andre Erickson Serhalawan\', \'2\', \'Benteng Atas RT.002 RW.003\', \'71\', \'010\', \'005\', \'1\', \'+62 852-4309-2612\', \'817123110058\', \'benoniserhalawan@yahoo.com\', \'2025\', \'2025-06-23 15:17:17\', \'2025-06-23 15:17:17\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `mitra` (`nama_lengkap`, `posisi`, `alamat`, `kab`, `kec`, `desa`, `jk`, `no_hp`, `sobat_id`, `email`, `tahun`, `created_at`, `updated_at`) VALUES (\'Benoni Andre Erickson Serhalawan\', \'2\', \'Benteng Atas RT.002 RW.003\', \'71\', \'010\', \'005\', \'1\', \'+62 852-4309-2612\', \'817123110058\', \'benoniserhalawan@yahoo.com\', \'2025\', \'2025-06-23 15:17:17\', \'2025-06-23 15:17:17\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `mitra` (`nama_lengkap`, `posisi`, `alamat`, `kab`, `kec`, `desa`, `jk`, `no_hp`, `sobat_id`, `email`, `tahun`, `created_at`, `updated_at`) VALUES (\'Benoni Andre Erickson Serhalawan\', \'2\', \'Benteng Atas RT.002 RW.003\', \'71\', \'010\', \'005\', \'1\', \'+62 852-4309-2612\', \'817123110058\', \'benoniserhalawan@yahoo.com\', \'2025\', \'2025-06-23 15:17:17\', \'2025-06-23 15:17:17\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mitra` (`nama_lengkap`, `posisi`, `alamat`, `kab`, `kec`, `desa`, `jk`, `no_hp`, `sobat_id`, `email`, `tahun`, `created_at`, `updated_at`) VALUES (:nama_lengkap:, :posisi:, :alamat:, :kab:, :kec:, :desa:, :jk:, :no_hp:, :sobat_id:, :email:, :tahun:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Admin.php(55): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->importMitra()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-23 15:17:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 15:18:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 15:18:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 15:21:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-23 15:21:43 --> ErrorException: Undefined variable $role_user
+[Method: GET, Route: mitra/import-mitra]
+in APPPATH\Views\templates\sidebar.php on line 27.
+ 1 APPPATH\Views\templates\sidebar.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $role_user', 'D:\\xampp\\htdocs\\mitra\\app\\Views\\templates\\sidebar.php', 27)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\mitra\\app\\Views\\templates\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('templates/sidebar', null, true)
+ 5 APPPATH\Views\templates\adminlte.php(11): CodeIgniter\View\View->include('templates/sidebar')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\mitra\\app\\Views\\templates\\adminlte.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('templates/adminlte', [], true)
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('mitra/import_mitra', [], true)
+10 APPPATH\Controllers\Mitra.php(16): view('mitra/import_mitra', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mitra->importMitraForm()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitra))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-23 15:22:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-23 15:22:07 --> ErrorException: Undefined variable $role_user
+[Method: GET, Route: mitra/import-mitra]
+in APPPATH\Views\templates\sidebar.php on line 27.
+ 1 APPPATH\Views\templates\sidebar.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $role_user', 'D:\\xampp\\htdocs\\mitra\\app\\Views\\templates\\sidebar.php', 27)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\mitra\\app\\Views\\templates\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('templates/sidebar', null, true)
+ 5 APPPATH\Views\templates\adminlte.php(11): CodeIgniter\View\View->include('templates/sidebar')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\mitra\\app\\Views\\templates\\adminlte.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('templates/adminlte', [], true)
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('mitra/import_mitra', [], true)
+10 APPPATH\Controllers\Mitra.php(16): view('mitra/import_mitra', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mitra->importMitraForm()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitra))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-23 15:22:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 15:26:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-23 15:26:34 --> ErrorException: Undefined variable $title
+[Method: GET, Route: mitra]
+in APPPATH\Views\templates\parts\head.php on line 2.
+ 1 APPPATH\Views\templates\parts\head.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'D:\\xampp\\htdocs\\mitra\\app\\Views\\templates\\parts\\head.php', 2)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\mitra\\app\\Views\\templates\\parts\\head.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('templates/parts/head', null, true)
+ 5 APPPATH\Views\templates\adminlte.php(5): CodeIgniter\View\View->include('templates/parts/head')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\mitra\\app\\Views\\templates\\adminlte.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('templates/adminlte', [], true)
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('mitra/mitra_list', [], true)
+10 APPPATH\Controllers\Mitra.php(14): view('mitra/mitra_list', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mitra->index()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitra))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-23 15:27:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-23 15:31:04 --> mysqli_sql_exception: Unknown column 'posisi.nama_posisi' in 'field list' in D:\xampp\htdocs\mitra\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\xampp\htdocs\mitra\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `mitra`....', 0)
+#1 D:\xampp\htdocs\mitra\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `mitra`....')
+#2 D:\xampp\htdocs\mitra\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `mitra`....')
+#3 D:\xampp\htdocs\mitra\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `mitra`....', Array, false)
+#4 D:\xampp\htdocs\mitra\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\mitra\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\mitra\app\Models\MitraModel.php(32): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\mitra\app\Controllers\Mitra.php(15): App\Models\MitraModel->getWithPosisi()
+#8 D:\xampp\htdocs\mitra\system\CodeIgniter.php(933): App\Controllers\Mitra->index()
+#9 D:\xampp\htdocs\mitra\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitra))
+#10 D:\xampp\htdocs\mitra\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\mitra\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\mitra\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\mitra\public\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-06-23 15:31:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'posisi.nama_posisi' in 'field list'
+[Method: GET, Route: mitra]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `mitra`.*, `posisi`.`nama_posisi`
+FROM `mitra`
+LEFT JOIN `posisi` ON `posisi`.`id` = `mitra`.`posisi`
+ORDER BY `nama_lengkap` ASC', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\MitraModel.php(32): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Mitra.php(15): App\Models\MitraModel->getWithPosisi()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mitra->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitra))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 15:31:04 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'posisi.nama_posisi' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `mitra`.*, `posisi`.`nama_posisi`
+FROM `mitra`
+LEFT JOIN `posisi` ON `posisi`.`id` = `mitra`.`posisi`
+ORDER BY `nama_lengkap` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `mitra`.*, `posisi`.`nama_posisi`
+FROM `mitra`
+LEFT JOIN `posisi` ON `posisi`.`id` = `mitra`.`posisi`
+ORDER BY `nama_lengkap` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `mitra`.*, `posisi`.`nama_posisi`
+FROM `mitra`
+LEFT JOIN `posisi` ON `posisi`.`id` = `mitra`.`posisi`
+ORDER BY `nama_lengkap` ASC', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\MitraModel.php(32): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Mitra.php(15): App\Models\MitraModel->getWithPosisi()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mitra->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitra))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 15:31:04 --> [Caused by] mysqli_sql_exception: Unknown column 'posisi.nama_posisi' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `mitra`.*, `posisi`.`nama_posisi`
+FROM `mitra`
+LEFT JOIN `posisi` ON `posisi`.`id` = `mitra`.`posisi`
+ORDER BY `nama_lengkap` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `mitra`.*, `posisi`.`nama_posisi`
+FROM `mitra`
+LEFT JOIN `posisi` ON `posisi`.`id` = `mitra`.`posisi`
+ORDER BY `nama_lengkap` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `mitra`.*, `posisi`.`nama_posisi`
+FROM `mitra`
+LEFT JOIN `posisi` ON `posisi`.`id` = `mitra`.`posisi`
+ORDER BY `nama_lengkap` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `mitra`.*, `posisi`.`nama_posisi`
+FROM `mitra`
+LEFT JOIN `posisi` ON `posisi`.`id` = `mitra`.`posisi`
+ORDER BY `nama_lengkap` ASC', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\MitraModel.php(32): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Mitra.php(15): App\Models\MitraModel->getWithPosisi()
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mitra->index()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitra))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-23 15:32:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 15:33:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 15:34:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 15:34:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 15:35:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-23 15:43:03 --> ErrorException: Undefined variable $title
+[Method: GET, Route: mitra/kegiatan/tambah]
+in APPPATH\Views\templates\parts\head.php on line 2.
+ 1 APPPATH\Views\templates\parts\head.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'D:\\xampp\\htdocs\\mitra\\app\\Views\\templates\\parts\\head.php', 2)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\mitra\\app\\Views\\templates\\parts\\head.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('templates/parts/head', null, true)
+ 5 APPPATH\Views\templates\adminlte.php(5): CodeIgniter\View\View->include('templates/parts/head')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\mitra\\app\\Views\\templates\\adminlte.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('templates/adminlte', [], true)
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('kegiatan/kegiatan_add', [], true)
+10 APPPATH\Controllers\Mitra.php(78): view('kegiatan/kegiatan_add')
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mitra->tambahKegiatanForm()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitra))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 15:43:52 --> ErrorException: Undefined variable $title
+[Method: GET, Route: mitra/kegiatan/tambah]
+in APPPATH\Views\templates\parts\head.php on line 2.
+ 1 APPPATH\Views\templates\parts\head.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'D:\\xampp\\htdocs\\mitra\\app\\Views\\templates\\parts\\head.php', 2)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\mitra\\app\\Views\\templates\\parts\\head.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('templates/parts/head', null, true)
+ 5 APPPATH\Views\templates\adminlte.php(5): CodeIgniter\View\View->include('templates/parts/head')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\mitra\\app\\Views\\templates\\adminlte.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('templates/adminlte', [], true)
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('kegiatan/kegiatan_add', [], true)
+10 APPPATH\Controllers\Mitra.php(79): view('kegiatan/kegiatan_add')
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mitra->tambahKegiatanForm()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitra))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-06-23 15:50:41 --> mysqli_sql_exception: Table 'user_auth.kegiatan_statistik' doesn't exist in D:\xampp\htdocs\mitra\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\xampp\htdocs\mitra\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `ke...', 0)
+#1 D:\xampp\htdocs\mitra\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ke...')
+#2 D:\xampp\htdocs\mitra\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ke...')
+#3 D:\xampp\htdocs\mitra\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ke...', Array, false)
+#4 D:\xampp\htdocs\mitra\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\xampp\htdocs\mitra\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 D:\xampp\htdocs\mitra\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\xampp\htdocs\mitra\app\Controllers\Mitra.php(92): CodeIgniter\Model->insert(Array)
+#8 D:\xampp\htdocs\mitra\system\CodeIgniter.php(933): App\Controllers\Mitra->simpanKegiatan()
+#9 D:\xampp\htdocs\mitra\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitra))
+#10 D:\xampp\htdocs\mitra\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\mitra\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\mitra\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\mitra\public\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-06-23 15:50:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'user_auth.kegiatan_statistik' doesn't exist
+[Method: POST, Route: mitra/kegiatan/tambah]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kegiatan_statistik` (`nama_kegiatan`, `tahun`, `tanggal_mulai`, `tanggal_selesai`, `created_at`, `updated_at`) VALUES (:nama_kegiatan:, :tahun:, :tanggal_mulai:, :tanggal_selesai:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Mitra.php(92): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mitra->simpanKegiatan()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitra))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 15:50:41 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'user_auth.kegiatan_statistik' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `kegiatan_statistik` (`nama_kegiatan`, `tahun`, `tanggal_mulai`, `tanggal_selesai`, `created_at`, `updated_at`) VALUES (\'Pemutakhiran Kerangka Geospasial dan Muatan Wilkerstat SE2026\', \'2025\', \'2025-07-01\', \'2025-12-31\', \'2025-06-23 15:50:41\', \'2025-06-23 15:50:41\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `kegiatan_statistik` (`nama_kegiatan`, `tahun`, `tanggal_mulai`, `tanggal_selesai`, `created_at`, `updated_at`) VALUES (\'Pemutakhiran Kerangka Geospasial dan Muatan Wilkerstat SE2026\', \'2025\', \'2025-07-01\', \'2025-12-31\', \'2025-06-23 15:50:41\', \'2025-06-23 15:50:41\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kegiatan_statistik` (`nama_kegiatan`, `tahun`, `tanggal_mulai`, `tanggal_selesai`, `created_at`, `updated_at`) VALUES (:nama_kegiatan:, :tahun:, :tanggal_mulai:, :tanggal_selesai:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Mitra.php(92): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mitra->simpanKegiatan()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitra))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 15:50:41 --> [Caused by] mysqli_sql_exception: Table 'user_auth.kegiatan_statistik' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `kegiatan_statistik` (`nama_kegiatan`, `tahun`, `tanggal_mulai`, `tanggal_selesai`, `created_at`, `updated_at`) VALUES (\'Pemutakhiran Kerangka Geospasial dan Muatan Wilkerstat SE2026\', \'2025\', \'2025-07-01\', \'2025-12-31\', \'2025-06-23 15:50:41\', \'2025-06-23 15:50:41\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `kegiatan_statistik` (`nama_kegiatan`, `tahun`, `tanggal_mulai`, `tanggal_selesai`, `created_at`, `updated_at`) VALUES (\'Pemutakhiran Kerangka Geospasial dan Muatan Wilkerstat SE2026\', \'2025\', \'2025-07-01\', \'2025-12-31\', \'2025-06-23 15:50:41\', \'2025-06-23 15:50:41\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `kegiatan_statistik` (`nama_kegiatan`, `tahun`, `tanggal_mulai`, `tanggal_selesai`, `created_at`, `updated_at`) VALUES (\'Pemutakhiran Kerangka Geospasial dan Muatan Wilkerstat SE2026\', \'2025\', \'2025-07-01\', \'2025-12-31\', \'2025-06-23 15:50:41\', \'2025-06-23 15:50:41\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kegiatan_statistik` (`nama_kegiatan`, `tahun`, `tanggal_mulai`, `tanggal_selesai`, `created_at`, `updated_at`) VALUES (:nama_kegiatan:, :tahun:, :tanggal_mulai:, :tanggal_selesai:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Mitra.php(92): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mitra->simpanKegiatan()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitra))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-23 17:08:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-23 17:08:44 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "mitra/kegiatan_list.php"
+[Method: GET, Route: mitra/kegiatan]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mitra/kegiatan_list.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('mitra/kegiatan_list', [], true)
+ 3 APPPATH\Controllers\Mitra.php(101): view('mitra/kegiatan_list', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mitra->kegiatanList()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitra))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-23 17:09:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 17:09:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 17:09:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 17:09:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 17:09:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 17:10:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 17:10:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 17:10:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 17:11:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 17:11:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 17:11:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 17:12:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 17:19:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 17:20:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-23 17:20:21 --> ErrorException: Undefined array key "jenis_kelamin"
+[Method: GET, Route: mitra]
+in APPPATH\Views\mitra\mitra_list.php on line 53.
+ 1 APPPATH\Views\mitra\mitra_list.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "jenis_kelamin"', 'D:\\xampp\\htdocs\\mitra\\app\\Views\\mitra\\mitra_list.php', 53)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\mitra\\app\\Views\\mitra\\mitra_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('mitra/mitra_list', [], true)
+ 5 APPPATH\Controllers\Mitra.php(18): view('mitra/mitra_list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mitra->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitra))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-23 17:20:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-23 17:20:29 --> ErrorException: Undefined array key "jenis_kelamin"
+[Method: GET, Route: mitra]
+in APPPATH\Views\mitra\mitra_list.php on line 54.
+ 1 APPPATH\Views\mitra\mitra_list.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "jenis_kelamin"', 'D:\\xampp\\htdocs\\mitra\\app\\Views\\mitra\\mitra_list.php', 54)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\mitra\\app\\Views\\mitra\\mitra_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('mitra/mitra_list', [], true)
+ 5 APPPATH\Controllers\Mitra.php(18): view('mitra/mitra_list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mitra->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitra))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-23 17:20:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-23 17:22:32 --> mysqli_sql_exception: Unknown column 'master_jk.jk' in 'field list' in D:\xampp\htdocs\mitra\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\xampp\htdocs\mitra\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `mitra`....', 0)
+#1 D:\xampp\htdocs\mitra\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `mitra`....')
+#2 D:\xampp\htdocs\mitra\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `mitra`....')
+#3 D:\xampp\htdocs\mitra\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `mitra`....', Array, false)
+#4 D:\xampp\htdocs\mitra\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\mitra\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\mitra\app\Models\MitraModel.php(33): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\mitra\app\Controllers\Mitra.php(16): App\Models\MitraModel->getWithPosisi()
+#8 D:\xampp\htdocs\mitra\system\CodeIgniter.php(933): App\Controllers\Mitra->index()
+#9 D:\xampp\htdocs\mitra\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitra))
+#10 D:\xampp\htdocs\mitra\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\mitra\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\mitra\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\mitra\public\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-06-23 17:22:32 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'master_jk.jk' in 'field list'
+[Method: GET, Route: mitra]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `mitra`.*, `posisi`.`posisi`, `master_jk`.`jk`
+FROM `mitra`
+LEFT JOIN `posisi` ON `posisi`.`id` = `mitra`.`posisi`
+LEFT JOIN `master_jk` ON `master_jk`.`id` = `mitra`.`jk`
+ORDER BY `nama_lengkap` ASC', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\MitraModel.php(33): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Mitra.php(16): App\Models\MitraModel->getWithPosisi()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mitra->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitra))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 17:22:32 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'master_jk.jk' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `mitra`.*, `posisi`.`posisi`, `master_jk`.`jk`
+FROM `mitra`
+LEFT JOIN `posisi` ON `posisi`.`id` = `mitra`.`posisi`
+LEFT JOIN `master_jk` ON `master_jk`.`id` = `mitra`.`jk`
+ORDER BY `nama_lengkap` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `mitra`.*, `posisi`.`posisi`, `master_jk`.`jk`
+FROM `mitra`
+LEFT JOIN `posisi` ON `posisi`.`id` = `mitra`.`posisi`
+LEFT JOIN `master_jk` ON `master_jk`.`id` = `mitra`.`jk`
+ORDER BY `nama_lengkap` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `mitra`.*, `posisi`.`posisi`, `master_jk`.`jk`
+FROM `mitra`
+LEFT JOIN `posisi` ON `posisi`.`id` = `mitra`.`posisi`
+LEFT JOIN `master_jk` ON `master_jk`.`id` = `mitra`.`jk`
+ORDER BY `nama_lengkap` ASC', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\MitraModel.php(33): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Mitra.php(16): App\Models\MitraModel->getWithPosisi()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mitra->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitra))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 17:22:32 --> [Caused by] mysqli_sql_exception: Unknown column 'master_jk.jk' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `mitra`.*, `posisi`.`posisi`, `master_jk`.`jk`
+FROM `mitra`
+LEFT JOIN `posisi` ON `posisi`.`id` = `mitra`.`posisi`
+LEFT JOIN `master_jk` ON `master_jk`.`id` = `mitra`.`jk`
+ORDER BY `nama_lengkap` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `mitra`.*, `posisi`.`posisi`, `master_jk`.`jk`
+FROM `mitra`
+LEFT JOIN `posisi` ON `posisi`.`id` = `mitra`.`posisi`
+LEFT JOIN `master_jk` ON `master_jk`.`id` = `mitra`.`jk`
+ORDER BY `nama_lengkap` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `mitra`.*, `posisi`.`posisi`, `master_jk`.`jk`
+FROM `mitra`
+LEFT JOIN `posisi` ON `posisi`.`id` = `mitra`.`posisi`
+LEFT JOIN `master_jk` ON `master_jk`.`id` = `mitra`.`jk`
+ORDER BY `nama_lengkap` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `mitra`.*, `posisi`.`posisi`, `master_jk`.`jk`
+FROM `mitra`
+LEFT JOIN `posisi` ON `posisi`.`id` = `mitra`.`posisi`
+LEFT JOIN `master_jk` ON `master_jk`.`id` = `mitra`.`jk`
+ORDER BY `nama_lengkap` ASC', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\MitraModel.php(33): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Mitra.php(16): App\Models\MitraModel->getWithPosisi()
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mitra->index()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitra))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-23 17:22:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 17:23:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 17:27:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 17:28:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-23 17:28:36 --> ErrorException: Undefined variable $title
+[Method: GET, Route: mitra/kegiatan/assign/2]
+in APPPATH\Views\templates\parts\head.php on line 2.
+ 1 APPPATH\Views\templates\parts\head.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'D:\\xampp\\htdocs\\mitra\\app\\Views\\templates\\parts\\head.php', 2)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\mitra\\app\\Views\\templates\\parts\\head.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('templates/parts/head', null, true)
+ 5 APPPATH\Views\templates\adminlte.php(5): CodeIgniter\View\View->include('templates/parts/head')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\mitra\\app\\Views\\templates\\adminlte.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('templates/adminlte', [], true)
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('mitra/assign_mitra', [], true)
+10 APPPATH\Controllers\Mitra.php(119): view('mitra/assign_mitra', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mitra->formPenugasan('2')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitra))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-23 17:29:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 17:29:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 17:29:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 17:30:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 17:30:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-23 17:37:13 --> ErrorException: Undefined variable $title
+[Method: GET, Route: mitra/kegiatan/honor/2]
+in APPPATH\Views\templates\parts\head.php on line 2.
+ 1 APPPATH\Views\templates\parts\head.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'D:\\xampp\\htdocs\\mitra\\app\\Views\\templates\\parts\\head.php', 2)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\mitra\\app\\Views\\templates\\parts\\head.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('templates/parts/head', null, true)
+ 5 APPPATH\Views\templates\adminlte.php(5): CodeIgniter\View\View->include('templates/parts/head')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\mitra\\app\\Views\\templates\\adminlte.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('templates/adminlte', [], true)
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('mitra/input_honor', [], true)
+10 APPPATH\Controllers\Mitra.php(155): view('mitra/input_honor', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mitra->inputHonor('2')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitra))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-23 17:53:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 17:53:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 17:53:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-23 17:56:25 --> mysqli_sql_exception: Table 'mitra.kegiatan' doesn't exist in D:\xampp\htdocs\mitra\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\xampp\htdocs\mitra\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\mitra\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\mitra\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\mitra\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\mitra\app\Controllers\Mitra.php(168): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\mitra\system\CodeIgniter.php(933): App\Controllers\Mitra->inputSatuan('2')
+#6 D:\xampp\htdocs\mitra\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitra))
+#7 D:\xampp\htdocs\mitra\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\mitra\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\mitra\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 D:\xampp\htdocs\mitra\public\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-06-23 17:56:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'mitra.kegiatan' doesn't exist
+[Method: GET, Route: mitra/input-satuan/2]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kegiatan`
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Controllers\Mitra.php(168): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mitra->inputSatuan('2')
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitra))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 17:56:25 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'mitra.kegiatan' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `kegiatan`
+WHERE `id` = \'2\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `kegiatan`
+WHERE `id` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kegiatan`
+WHERE `id` = :id:', [...], false)
+ 4 APPPATH\Controllers\Mitra.php(168): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mitra->inputSatuan('2')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitra))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 17:56:25 --> [Caused by] mysqli_sql_exception: Table 'mitra.kegiatan' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `kegiatan`
+WHERE `id` = \'2\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `kegiatan`
+WHERE `id` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `kegiatan`
+WHERE `id` = \'2\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kegiatan`
+WHERE `id` = :id:', [...], false)
+ 5 APPPATH\Controllers\Mitra.php(168): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mitra->inputSatuan('2')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitra))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-23 17:57:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-23 17:57:26 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in D:\xampp\htdocs\mitra\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\xampp\htdocs\mitra\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `ho...', 0)
+#1 D:\xampp\htdocs\mitra\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ho...')
+#2 D:\xampp\htdocs\mitra\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ho...')
+#3 D:\xampp\htdocs\mitra\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ho...', Array, false)
+#4 D:\xampp\htdocs\mitra\app\Controllers\Mitra.php(192): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\xampp\htdocs\mitra\system\CodeIgniter.php(933): App\Controllers\Mitra->simpanSatuan()
+#6 D:\xampp\htdocs\mitra\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitra))
+#7 D:\xampp\htdocs\mitra\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\mitra\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\mitra\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 D:\xampp\htdocs\mitra\public\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-06-23 17:57:26 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+[Method: POST, Route: mitra/simpan-satuan]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `honor_satuan` (`kegiatan_id`, `nama_satuan`, `harga_per_satuan`, `created_at`) VALUES (:kegiatan_id:, :nama_satuan:, :harga_per_satuan:, :created_at:)', [...], false)
+ 2 APPPATH\Controllers\Mitra.php(192): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mitra->simpanSatuan()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitra))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 17:57:26 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `honor_satuan` (`kegiatan_id`, `nama_satuan`, `harga_per_satuan`, `created_at`) VALUES (\'2\', \'O-B\', \'3800000\', \'2025-06-23 17:57:26\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `honor_satuan` (`kegiatan_id`, `nama_satuan`, `harga_per_satuan`, `created_at`) VALUES (\'2\', \'O-B\', \'3800000\', \'2025-06-23 17:57:26\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `honor_satuan` (`kegiatan_id`, `nama_satuan`, `harga_per_satuan`, `created_at`) VALUES (:kegiatan_id:, :nama_satuan:, :harga_per_satuan:, :created_at:)', [...], false)
+ 4 APPPATH\Controllers\Mitra.php(192): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mitra->simpanSatuan()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitra))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 17:57:26 --> [Caused by] mysqli_sql_exception: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `honor_satuan` (`kegiatan_id`, `nama_satuan`, `harga_per_satuan`, `created_at`) VALUES (\'2\', \'O-B\', \'3800000\', \'2025-06-23 17:57:26\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `honor_satuan` (`kegiatan_id`, `nama_satuan`, `harga_per_satuan`, `created_at`) VALUES (\'2\', \'O-B\', \'3800000\', \'2025-06-23 17:57:26\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `honor_satuan` (`kegiatan_id`, `nama_satuan`, `harga_per_satuan`, `created_at`) VALUES (\'2\', \'O-B\', \'3800000\', \'2025-06-23 17:57:26\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `honor_satuan` (`kegiatan_id`, `nama_satuan`, `harga_per_satuan`, `created_at`) VALUES (:kegiatan_id:, :nama_satuan:, :harga_per_satuan:, :created_at:)', [...], false)
+ 5 APPPATH\Controllers\Mitra.php(192): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mitra->simpanSatuan()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitra))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-23 17:58:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 17:58:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 17:58:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 17:58:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-23 17:58:52 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in D:\xampp\htdocs\mitra\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\xampp\htdocs\mitra\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `ho...', 0)
+#1 D:\xampp\htdocs\mitra\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ho...')
+#2 D:\xampp\htdocs\mitra\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ho...')
+#3 D:\xampp\htdocs\mitra\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ho...', Array, false)
+#4 D:\xampp\htdocs\mitra\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\xampp\htdocs\mitra\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 D:\xampp\htdocs\mitra\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\xampp\htdocs\mitra\app\Controllers\Mitra.php(218): CodeIgniter\Model->insert(Array)
+#8 D:\xampp\htdocs\mitra\system\CodeIgniter.php(933): App\Controllers\Mitra->simpanHonor()
+#9 D:\xampp\htdocs\mitra\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitra))
+#10 D:\xampp\htdocs\mitra\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\mitra\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\mitra\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\mitra\public\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-06-23 17:58:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'updated_at' in 'field list'
+[Method: POST, Route: mitra/simpan-honor]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `honor_mitra` (`kegiatan_id`, `mitra_id`, `honor_satuan_id`, `jumlah_satuan`, `potongan_pajak`, `total_diterima`, `created_at`, `updated_at`) VALUES (:kegiatan_id:, :mitra_id:, :honor_satuan_id:, :jumlah_satuan:, :potongan_pajak:, :total_diterima:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Mitra.php(218): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mitra->simpanHonor()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitra))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 17:58:52 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `honor_mitra` (`kegiatan_id`, `mitra_id`, `honor_satuan_id`, `jumlah_satuan`, `potongan_pajak`, `total_diterima`, `created_at`, `updated_at`) VALUES (\'2\', \'39\', \'1\', \'1\', \'0\', 3800000, \'2025-06-23 17:58:52\', \'2025-06-23 17:58:52\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `honor_mitra` (`kegiatan_id`, `mitra_id`, `honor_satuan_id`, `jumlah_satuan`, `potongan_pajak`, `total_diterima`, `created_at`, `updated_at`) VALUES (\'2\', \'39\', \'1\', \'1\', \'0\', 3800000, \'2025-06-23 17:58:52\', \'2025-06-23 17:58:52\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `honor_mitra` (`kegiatan_id`, `mitra_id`, `honor_satuan_id`, `jumlah_satuan`, `potongan_pajak`, `total_diterima`, `created_at`, `updated_at`) VALUES (:kegiatan_id:, :mitra_id:, :honor_satuan_id:, :jumlah_satuan:, :potongan_pajak:, :total_diterima:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Mitra.php(218): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mitra->simpanHonor()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitra))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 17:58:52 --> [Caused by] mysqli_sql_exception: Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `honor_mitra` (`kegiatan_id`, `mitra_id`, `honor_satuan_id`, `jumlah_satuan`, `potongan_pajak`, `total_diterima`, `created_at`, `updated_at`) VALUES (\'2\', \'39\', \'1\', \'1\', \'0\', 3800000, \'2025-06-23 17:58:52\', \'2025-06-23 17:58:52\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `honor_mitra` (`kegiatan_id`, `mitra_id`, `honor_satuan_id`, `jumlah_satuan`, `potongan_pajak`, `total_diterima`, `created_at`, `updated_at`) VALUES (\'2\', \'39\', \'1\', \'1\', \'0\', 3800000, \'2025-06-23 17:58:52\', \'2025-06-23 17:58:52\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `honor_mitra` (`kegiatan_id`, `mitra_id`, `honor_satuan_id`, `jumlah_satuan`, `potongan_pajak`, `total_diterima`, `created_at`, `updated_at`) VALUES (\'2\', \'39\', \'1\', \'1\', \'0\', 3800000, \'2025-06-23 17:58:52\', \'2025-06-23 17:58:52\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `honor_mitra` (`kegiatan_id`, `mitra_id`, `honor_satuan_id`, `jumlah_satuan`, `potongan_pajak`, `total_diterima`, `created_at`, `updated_at`) VALUES (:kegiatan_id:, :mitra_id:, :honor_satuan_id:, :jumlah_satuan:, :potongan_pajak:, :total_diterima:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Mitra.php(218): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mitra->simpanHonor()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitra))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-23 17:59:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 17:59:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 17:59:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 18:03:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 18:03:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 18:04:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 18:04:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 18:06:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 18:06:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-23 18:07:41 --> mysqli_sql_exception: Operand should contain 1 column(s) in D:\xampp\htdocs\mitra\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\xampp\htdocs\mitra\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `ho...', 0)
+#1 D:\xampp\htdocs\mitra\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ho...')
+#2 D:\xampp\htdocs\mitra\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ho...')
+#3 D:\xampp\htdocs\mitra\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ho...', Array, false)
+#4 D:\xampp\htdocs\mitra\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\xampp\htdocs\mitra\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 D:\xampp\htdocs\mitra\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\xampp\htdocs\mitra\app\Controllers\Mitra.php(217): CodeIgniter\Model->insert(Array)
+#8 D:\xampp\htdocs\mitra\system\CodeIgniter.php(933): App\Controllers\Mitra->simpanHonor()
+#9 D:\xampp\htdocs\mitra\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitra))
+#10 D:\xampp\htdocs\mitra\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\mitra\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\mitra\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\mitra\public\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-06-23 18:07:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Operand should contain 1 column(s)
+[Method: POST, Route: mitra/simpan-honor]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `honor_mitra` (`kegiatan_id`, `mitra_id`, `honor_satuan_id`, `jumlah_satuan`, `potongan_pajak`, `total_diterima`, `bulan_pembayaran`, `created_at`, `updated_at`) VALUES (:kegiatan_id:, :mitra_id:, :honor_satuan_id:, :jumlah_satuan:, :potongan_pajak:, :total_diterima:, :bulan_pembayaran:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Mitra.php(217): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mitra->simpanHonor()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitra))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 18:07:41 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Operand should contain 1 column(s)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `honor_mitra` (`kegiatan_id`, `mitra_id`, `honor_satuan_id`, `jumlah_satuan`, `potongan_pajak`, `total_diterima`, `bulan_pembayaran`, `created_at`, `updated_at`) VALUES (\'2\', \'39\', \'1\', \'1\', \'0\', 3800000, (\'01\',\'01\'), \'2025-06-23 18:07:41\', \'2025-06-23 18:07:41\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `honor_mitra` (`kegiatan_id`, `mitra_id`, `honor_satuan_id`, `jumlah_satuan`, `potongan_pajak`, `total_diterima`, `bulan_pembayaran`, `created_at`, `updated_at`) VALUES (\'2\', \'39\', \'1\', \'1\', \'0\', 3800000, (\'01\',\'01\'), \'2025-06-23 18:07:41\', \'2025-06-23 18:07:41\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `honor_mitra` (`kegiatan_id`, `mitra_id`, `honor_satuan_id`, `jumlah_satuan`, `potongan_pajak`, `total_diterima`, `bulan_pembayaran`, `created_at`, `updated_at`) VALUES (:kegiatan_id:, :mitra_id:, :honor_satuan_id:, :jumlah_satuan:, :potongan_pajak:, :total_diterima:, :bulan_pembayaran:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Mitra.php(217): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mitra->simpanHonor()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitra))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 18:07:41 --> [Caused by] mysqli_sql_exception: Operand should contain 1 column(s)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `honor_mitra` (`kegiatan_id`, `mitra_id`, `honor_satuan_id`, `jumlah_satuan`, `potongan_pajak`, `total_diterima`, `bulan_pembayaran`, `created_at`, `updated_at`) VALUES (\'2\', \'39\', \'1\', \'1\', \'0\', 3800000, (\'01\',\'01\'), \'2025-06-23 18:07:41\', \'2025-06-23 18:07:41\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `honor_mitra` (`kegiatan_id`, `mitra_id`, `honor_satuan_id`, `jumlah_satuan`, `potongan_pajak`, `total_diterima`, `bulan_pembayaran`, `created_at`, `updated_at`) VALUES (\'2\', \'39\', \'1\', \'1\', \'0\', 3800000, (\'01\',\'01\'), \'2025-06-23 18:07:41\', \'2025-06-23 18:07:41\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `honor_mitra` (`kegiatan_id`, `mitra_id`, `honor_satuan_id`, `jumlah_satuan`, `potongan_pajak`, `total_diterima`, `bulan_pembayaran`, `created_at`, `updated_at`) VALUES (\'2\', \'39\', \'1\', \'1\', \'0\', 3800000, (\'01\',\'01\'), \'2025-06-23 18:07:41\', \'2025-06-23 18:07:41\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `honor_mitra` (`kegiatan_id`, `mitra_id`, `honor_satuan_id`, `jumlah_satuan`, `potongan_pajak`, `total_diterima`, `bulan_pembayaran`, `created_at`, `updated_at`) VALUES (:kegiatan_id:, :mitra_id:, :honor_satuan_id:, :jumlah_satuan:, :potongan_pajak:, :total_diterima:, :bulan_pembayaran:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Mitra.php(217): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mitra->simpanHonor()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitra))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-23 18:09:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 18:09:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-23 18:10:59 --> mysqli_sql_exception: Table 'mitra.kegiatan' doesn't exist in D:\xampp\htdocs\mitra\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\xampp\htdocs\mitra\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `m`.`nam...', 0)
+#1 D:\xampp\htdocs\mitra\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `m`.`nam...')
+#2 D:\xampp\htdocs\mitra\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `m`.`nam...')
+#3 D:\xampp\htdocs\mitra\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `m`.`nam...', Array, false)
+#4 D:\xampp\htdocs\mitra\app\Controllers\Mitra.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\mitra\system\CodeIgniter.php(933): App\Controllers\Mitra->laporanHonor()
+#6 D:\xampp\htdocs\mitra\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitra))
+#7 D:\xampp\htdocs\mitra\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\mitra\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\mitra\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 D:\xampp\htdocs\mitra\public\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-06-23 18:10:59 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'mitra.kegiatan' doesn't exist
+[Method: GET, Route: mitra/laporan-honor]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `m`.`nama_lengkap`, `k`.`nama_kegiatan`, `hm`.`bulan_pembayaran`, SUM((hm.jumlah_satuan * hs.harga_per_satuan) - hm.potongan_pajak) AS total
+FROM `honor_mitra` `hm`
+JOIN `mitra` `m` ON `m`.`id` = `hm`.`mitra_id`
+JOIN `kegiatan` `k` ON `k`.`id` = `hm`.`kegiatan_id`
+JOIN `honor_satuan` `hs` ON `hs`.`id` = `hm`.`honor_satuan_id`
+GROUP BY `hm`.`mitra_id`, `hm`.`bulan_pembayaran`, `hm`.`kegiatan_id`
+ORDER BY `hm`.`bulan_pembayaran` ASC', [], false)
+ 2 APPPATH\Controllers\Mitra.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mitra->laporanHonor()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitra))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 18:10:59 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'mitra.kegiatan' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `m`.`nama_lengkap`, `k`.`nama_kegiatan`, `hm`.`bulan_pembayaran`, SUM((hm.jumlah_satuan * hs.harga_per_satuan) - hm.potongan_pajak) AS total
+FROM `honor_mitra` `hm`
+JOIN `mitra` `m` ON `m`.`id` = `hm`.`mitra_id`
+JOIN `kegiatan` `k` ON `k`.`id` = `hm`.`kegiatan_id`
+JOIN `honor_satuan` `hs` ON `hs`.`id` = `hm`.`honor_satuan_id`
+GROUP BY `hm`.`mitra_id`, `hm`.`bulan_pembayaran`, `hm`.`kegiatan_id`
+ORDER BY `hm`.`bulan_pembayaran` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `m`.`nama_lengkap`, `k`.`nama_kegiatan`, `hm`.`bulan_pembayaran`, SUM((hm.jumlah_satuan * hs.harga_per_satuan) - hm.potongan_pajak) AS total
+FROM `honor_mitra` `hm`
+JOIN `mitra` `m` ON `m`.`id` = `hm`.`mitra_id`
+JOIN `kegiatan` `k` ON `k`.`id` = `hm`.`kegiatan_id`
+JOIN `honor_satuan` `hs` ON `hs`.`id` = `hm`.`honor_satuan_id`
+GROUP BY `hm`.`mitra_id`, `hm`.`bulan_pembayaran`, `hm`.`kegiatan_id`
+ORDER BY `hm`.`bulan_pembayaran` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `m`.`nama_lengkap`, `k`.`nama_kegiatan`, `hm`.`bulan_pembayaran`, SUM((hm.jumlah_satuan * hs.harga_per_satuan) - hm.potongan_pajak) AS total
+FROM `honor_mitra` `hm`
+JOIN `mitra` `m` ON `m`.`id` = `hm`.`mitra_id`
+JOIN `kegiatan` `k` ON `k`.`id` = `hm`.`kegiatan_id`
+JOIN `honor_satuan` `hs` ON `hs`.`id` = `hm`.`honor_satuan_id`
+GROUP BY `hm`.`mitra_id`, `hm`.`bulan_pembayaran`, `hm`.`kegiatan_id`
+ORDER BY `hm`.`bulan_pembayaran` ASC', [], false)
+ 4 APPPATH\Controllers\Mitra.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mitra->laporanHonor()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitra))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 18:10:59 --> [Caused by] mysqli_sql_exception: Table 'mitra.kegiatan' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `m`.`nama_lengkap`, `k`.`nama_kegiatan`, `hm`.`bulan_pembayaran`, SUM((hm.jumlah_satuan * hs.harga_per_satuan) - hm.potongan_pajak) AS total
+FROM `honor_mitra` `hm`
+JOIN `mitra` `m` ON `m`.`id` = `hm`.`mitra_id`
+JOIN `kegiatan` `k` ON `k`.`id` = `hm`.`kegiatan_id`
+JOIN `honor_satuan` `hs` ON `hs`.`id` = `hm`.`honor_satuan_id`
+GROUP BY `hm`.`mitra_id`, `hm`.`bulan_pembayaran`, `hm`.`kegiatan_id`
+ORDER BY `hm`.`bulan_pembayaran` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `m`.`nama_lengkap`, `k`.`nama_kegiatan`, `hm`.`bulan_pembayaran`, SUM((hm.jumlah_satuan * hs.harga_per_satuan) - hm.potongan_pajak) AS total
+FROM `honor_mitra` `hm`
+JOIN `mitra` `m` ON `m`.`id` = `hm`.`mitra_id`
+JOIN `kegiatan` `k` ON `k`.`id` = `hm`.`kegiatan_id`
+JOIN `honor_satuan` `hs` ON `hs`.`id` = `hm`.`honor_satuan_id`
+GROUP BY `hm`.`mitra_id`, `hm`.`bulan_pembayaran`, `hm`.`kegiatan_id`
+ORDER BY `hm`.`bulan_pembayaran` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `m`.`nama_lengkap`, `k`.`nama_kegiatan`, `hm`.`bulan_pembayaran`, SUM((hm.jumlah_satuan * hs.harga_per_satuan) - hm.potongan_pajak) AS total
+FROM `honor_mitra` `hm`
+JOIN `mitra` `m` ON `m`.`id` = `hm`.`mitra_id`
+JOIN `kegiatan` `k` ON `k`.`id` = `hm`.`kegiatan_id`
+JOIN `honor_satuan` `hs` ON `hs`.`id` = `hm`.`honor_satuan_id`
+GROUP BY `hm`.`mitra_id`, `hm`.`bulan_pembayaran`, `hm`.`kegiatan_id`
+ORDER BY `hm`.`bulan_pembayaran` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `m`.`nama_lengkap`, `k`.`nama_kegiatan`, `hm`.`bulan_pembayaran`, SUM((hm.jumlah_satuan * hs.harga_per_satuan) - hm.potongan_pajak) AS total
+FROM `honor_mitra` `hm`
+JOIN `mitra` `m` ON `m`.`id` = `hm`.`mitra_id`
+JOIN `kegiatan` `k` ON `k`.`id` = `hm`.`kegiatan_id`
+JOIN `honor_satuan` `hs` ON `hs`.`id` = `hm`.`honor_satuan_id`
+GROUP BY `hm`.`mitra_id`, `hm`.`bulan_pembayaran`, `hm`.`kegiatan_id`
+ORDER BY `hm`.`bulan_pembayaran` ASC', [], false)
+ 5 APPPATH\Controllers\Mitra.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mitra->laporanHonor()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitra))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-23 18:13:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 18:13:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 18:14:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 18:29:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 18:31:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 18:31:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 18:31:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 18:31:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 18:42:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 18:43:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 18:43:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 18:43:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 18:47:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-23 18:47:16 --> ErrorException: Undefined variable $m
+[Method: GET, Route: mitra]
+in APPPATH\Views\mitra\mitra_list.php on line 57.
+ 1 APPPATH\Views\mitra\mitra_list.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $m', 'D:\\xampp\\htdocs\\mitra\\app\\Views\\mitra\\mitra_list.php', 57)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\mitra\\app\\Views\\mitra\\mitra_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('mitra/mitra_list', [], true)
+ 5 APPPATH\Controllers\Mitra.php(19): view('mitra/mitra_list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mitra->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitra))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-23 18:51:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-23 18:51:34 --> ErrorException: Undefined variable $m
+[Method: GET, Route: mitra]
+in APPPATH\Views\mitra\mitra_list.php on line 57.
+ 1 APPPATH\Views\mitra\mitra_list.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $m', 'D:\\xampp\\htdocs\\mitra\\app\\Views\\mitra\\mitra_list.php', 57)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\mitra\\app\\Views\\mitra\\mitra_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('mitra/mitra_list', [], true)
+ 5 APPPATH\Controllers\Mitra.php(19): view('mitra/mitra_list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mitra->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitra))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-23 18:52:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-23 18:52:50 --> mysqli_sql_exception: Table 'mitra.kegiatan' doesn't exist in D:\xampp\htdocs\mitra\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\xampp\htdocs\mitra\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `kegiata...', 0)
+#1 D:\xampp\htdocs\mitra\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kegiata...')
+#2 D:\xampp\htdocs\mitra\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kegiata...')
+#3 D:\xampp\htdocs\mitra\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `kegiata...', Array, false)
+#4 D:\xampp\htdocs\mitra\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\mitra\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\mitra\app\Models\HonorModel.php(38): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\mitra\app\Controllers\Mitra.php(301): App\Models\HonorModel->getHonorPerMitraPerTahun('39', '2025')
+#8 D:\xampp\htdocs\mitra\system\CodeIgniter.php(933): App\Controllers\Mitra->laporanHonor('39')
+#9 D:\xampp\htdocs\mitra\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitra))
+#10 D:\xampp\htdocs\mitra\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\mitra\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\mitra\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\mitra\public\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-06-23 18:52:50 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'mitra.kegiatan' doesn't exist
+[Method: GET, Route: mitra/laporan-honor/39]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `kegiatan`.`nama_kegiatan`, `honor_satuan`.`nama_satuan`, `honor_mitra`.`jumlah_satuan`, `honor_mitra`.`potongan_pajak`, `honor_mitra`.`total_diterima`, `honor_mitra`.`bulan_pembayaran`
+FROM `honor_mitra`
+JOIN `kegiatan` ON `kegiatan`.`id` = `honor_mitra`.`kegiatan_id`
+JOIN `honor_satuan` ON `honor_satuan`.`id` = `honor_mitra`.`honor_satuan_id`
+WHERE `honor_mitra`.`mitra_id` = :honor_mitra.mitra_id:
+AND YEAR(honor_mitra.created_at) = :YEAR(honor_mitra.created_at):
+ORDER BY `bulan_pembayaran`', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\HonorModel.php(38): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Mitra.php(301): App\Models\HonorModel->getHonorPerMitraPerTahun('39', '2025')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mitra->laporanHonor('39')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitra))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 18:52:50 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'mitra.kegiatan' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kegiatan`.`nama_kegiatan`, `honor_satuan`.`nama_satuan`, `honor_mitra`.`jumlah_satuan`, `honor_mitra`.`potongan_pajak`, `honor_mitra`.`total_diterima`, `honor_mitra`.`bulan_pembayaran`
+FROM `honor_mitra`
+JOIN `kegiatan` ON `kegiatan`.`id` = `honor_mitra`.`kegiatan_id`
+JOIN `honor_satuan` ON `honor_satuan`.`id` = `honor_mitra`.`honor_satuan_id`
+WHERE `honor_mitra`.`mitra_id` = \'39\'
+AND YEAR(honor_mitra.created_at) = \'2025\'
+ORDER BY `bulan_pembayaran`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kegiatan`.`nama_kegiatan`, `honor_satuan`.`nama_satuan`, `honor_mitra`.`jumlah_satuan`, `honor_mitra`.`potongan_pajak`, `honor_mitra`.`total_diterima`, `honor_mitra`.`bulan_pembayaran`
+FROM `honor_mitra`
+JOIN `kegiatan` ON `kegiatan`.`id` = `honor_mitra`.`kegiatan_id`
+JOIN `honor_satuan` ON `honor_satuan`.`id` = `honor_mitra`.`honor_satuan_id`
+WHERE `honor_mitra`.`mitra_id` = \'39\'
+AND YEAR(honor_mitra.created_at) = \'2025\'
+ORDER BY `bulan_pembayaran`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `kegiatan`.`nama_kegiatan`, `honor_satuan`.`nama_satuan`, `honor_mitra`.`jumlah_satuan`, `honor_mitra`.`potongan_pajak`, `honor_mitra`.`total_diterima`, `honor_mitra`.`bulan_pembayaran`
+FROM `honor_mitra`
+JOIN `kegiatan` ON `kegiatan`.`id` = `honor_mitra`.`kegiatan_id`
+JOIN `honor_satuan` ON `honor_satuan`.`id` = `honor_mitra`.`honor_satuan_id`
+WHERE `honor_mitra`.`mitra_id` = :honor_mitra.mitra_id:
+AND YEAR(honor_mitra.created_at) = :YEAR(honor_mitra.created_at):
+ORDER BY `bulan_pembayaran`', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\HonorModel.php(38): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Mitra.php(301): App\Models\HonorModel->getHonorPerMitraPerTahun('39', '2025')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mitra->laporanHonor('39')
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitra))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 18:52:50 --> [Caused by] mysqli_sql_exception: Table 'mitra.kegiatan' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `kegiatan`.`nama_kegiatan`, `honor_satuan`.`nama_satuan`, `honor_mitra`.`jumlah_satuan`, `honor_mitra`.`potongan_pajak`, `honor_mitra`.`total_diterima`, `honor_mitra`.`bulan_pembayaran`
+FROM `honor_mitra`
+JOIN `kegiatan` ON `kegiatan`.`id` = `honor_mitra`.`kegiatan_id`
+JOIN `honor_satuan` ON `honor_satuan`.`id` = `honor_mitra`.`honor_satuan_id`
+WHERE `honor_mitra`.`mitra_id` = \'39\'
+AND YEAR(honor_mitra.created_at) = \'2025\'
+ORDER BY `bulan_pembayaran`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kegiatan`.`nama_kegiatan`, `honor_satuan`.`nama_satuan`, `honor_mitra`.`jumlah_satuan`, `honor_mitra`.`potongan_pajak`, `honor_mitra`.`total_diterima`, `honor_mitra`.`bulan_pembayaran`
+FROM `honor_mitra`
+JOIN `kegiatan` ON `kegiatan`.`id` = `honor_mitra`.`kegiatan_id`
+JOIN `honor_satuan` ON `honor_satuan`.`id` = `honor_mitra`.`honor_satuan_id`
+WHERE `honor_mitra`.`mitra_id` = \'39\'
+AND YEAR(honor_mitra.created_at) = \'2025\'
+ORDER BY `bulan_pembayaran`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kegiatan`.`nama_kegiatan`, `honor_satuan`.`nama_satuan`, `honor_mitra`.`jumlah_satuan`, `honor_mitra`.`potongan_pajak`, `honor_mitra`.`total_diterima`, `honor_mitra`.`bulan_pembayaran`
+FROM `honor_mitra`
+JOIN `kegiatan` ON `kegiatan`.`id` = `honor_mitra`.`kegiatan_id`
+JOIN `honor_satuan` ON `honor_satuan`.`id` = `honor_mitra`.`honor_satuan_id`
+WHERE `honor_mitra`.`mitra_id` = \'39\'
+AND YEAR(honor_mitra.created_at) = \'2025\'
+ORDER BY `bulan_pembayaran`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `kegiatan`.`nama_kegiatan`, `honor_satuan`.`nama_satuan`, `honor_mitra`.`jumlah_satuan`, `honor_mitra`.`potongan_pajak`, `honor_mitra`.`total_diterima`, `honor_mitra`.`bulan_pembayaran`
+FROM `honor_mitra`
+JOIN `kegiatan` ON `kegiatan`.`id` = `honor_mitra`.`kegiatan_id`
+JOIN `honor_satuan` ON `honor_satuan`.`id` = `honor_mitra`.`honor_satuan_id`
+WHERE `honor_mitra`.`mitra_id` = :honor_mitra.mitra_id:
+AND YEAR(honor_mitra.created_at) = :YEAR(honor_mitra.created_at):
+ORDER BY `bulan_pembayaran`', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\HonorModel.php(38): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Mitra.php(301): App\Models\HonorModel->getHonorPerMitraPerTahun('39', '2025')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mitra->laporanHonor('39')
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitra))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 18:53:47 --> ErrorException: Undefined variable $title
+[Method: GET, Route: mitra/laporan-honor/39]
+in APPPATH\Views\templates\parts\head.php on line 2.
+ 1 APPPATH\Views\templates\parts\head.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'D:\\xampp\\htdocs\\mitra\\app\\Views\\templates\\parts\\head.php', 2)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\mitra\\app\\Views\\templates\\parts\\head.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('templates/parts/head', null, true)
+ 5 APPPATH\Views\templates\adminlte.php(5): CodeIgniter\View\View->include('templates/parts/head')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\mitra\\app\\Views\\templates\\adminlte.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('templates/adminlte', [], true)
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('mitra/laporan_honor_mitra', [], true)
+10 APPPATH\Controllers\Mitra.php(304): view('mitra/laporan_honor_mitra', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mitra->laporanHonor('39')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitra))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-23 19:13:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 19:13:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 19:13:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 19:14:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 19:14:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 19:14:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 19:14:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 19:14:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 19:14:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 19:14:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 19:14:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 19:14:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 19:14:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 19:14:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 19:14:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 19:15:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 19:15:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 19:15:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 19:15:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 19:15:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 19:15:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 19:15:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 19:16:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 19:17:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 19:18:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 19:26:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 19:26:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 19:26:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 19:28:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 19:32:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 19:32:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 19:32:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 19:33:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 19:33:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 19:34:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 19:34:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 19:34:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 19:34:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 19:34:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 19:35:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 19:35:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 19:37:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 19:52:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 19:53:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 19:54:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 19:54:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 19:58:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 19:58:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 19:58:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 20:00:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 20:00:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 20:01:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 20:02:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 20:02:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 21:07:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 21:07:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 21:08:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 21:08:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 21:09:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 21:32:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 21:33:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 21:33:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 21:33:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 21:33:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 21:33:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 21:33:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 21:34:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 21:34:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 21:34:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 21:35:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 21:35:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 21:36:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 21:44:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-23 21:48:13 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: mitra/daftar-mitra-kegiatan/2]
+in APPPATH\Views\mitra\daftar_mitra_kegiatan.php on line 36.
+ 1 APPPATH\Views\mitra\daftar_mitra_kegiatan.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'D:\\xampp\\htdocs\\mitra\\app\\Views\\mitra\\daftar_mitra_kegiatan.php', 36)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\mitra\\app\\Views\\mitra\\daftar_mitra_kegiatan.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('mitra/daftar_mitra_kegiatan', [], true)
+ 5 APPPATH\Controllers\Mitra.php(356): view('mitra/daftar_mitra_kegiatan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mitra->daftarMitraKegiatan('2')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitra))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-23 21:48:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-23 21:48:37 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: mitra/daftar-mitra-kegiatan/2]
+in APPPATH\Views\mitra\daftar_mitra_kegiatan.php on line 36.
+ 1 APPPATH\Views\mitra\daftar_mitra_kegiatan.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'D:\\xampp\\htdocs\\mitra\\app\\Views\\mitra\\daftar_mitra_kegiatan.php', 36)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\mitra\\app\\Views\\mitra\\daftar_mitra_kegiatan.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('mitra/daftar_mitra_kegiatan', [], true)
+ 5 APPPATH\Controllers\Mitra.php(356): view('mitra/daftar_mitra_kegiatan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mitra->daftarMitraKegiatan('2')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitra))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 22:03:06 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: mitra/daftar-mitra-kegiatan/2]
+in APPPATH\Views\mitra\daftar_mitra_kegiatan.php on line 37.
+ 1 APPPATH\Views\mitra\daftar_mitra_kegiatan.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'D:\\xampp\\htdocs\\mitra\\app\\Views\\mitra\\daftar_mitra_kegiatan.php', 37)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\mitra\\app\\Views\\mitra\\daftar_mitra_kegiatan.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('mitra/daftar_mitra_kegiatan', [], true)
+ 5 APPPATH\Controllers\Mitra.php(356): view('mitra/daftar_mitra_kegiatan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mitra->daftarMitraKegiatan('2')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitra))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 22:13:16 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: mitra/daftar-mitra-kegiatan/2]
+in APPPATH\Views\mitra\daftar_mitra_kegiatan.php on line 37.
+ 1 APPPATH\Views\mitra\daftar_mitra_kegiatan.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'D:\\xampp\\htdocs\\mitra\\app\\Views\\mitra\\daftar_mitra_kegiatan.php', 37)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\mitra\\app\\Views\\mitra\\daftar_mitra_kegiatan.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('mitra/daftar_mitra_kegiatan', [], true)
+ 5 APPPATH\Controllers\Mitra.php(356): view('mitra/daftar_mitra_kegiatan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mitra->daftarMitraKegiatan('2')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitra))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 22:13:52 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: mitra/daftar-mitra-kegiatan/2]
+in APPPATH\Views\mitra\daftar_mitra_kegiatan.php on line 37.
+ 1 APPPATH\Views\mitra\daftar_mitra_kegiatan.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'D:\\xampp\\htdocs\\mitra\\app\\Views\\mitra\\daftar_mitra_kegiatan.php', 37)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\mitra\\app\\Views\\mitra\\daftar_mitra_kegiatan.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('mitra/daftar_mitra_kegiatan', [], true)
+ 5 APPPATH\Controllers\Mitra.php(356): view('mitra/daftar_mitra_kegiatan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mitra->daftarMitraKegiatan('2')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitra))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 22:14:06 --> ErrorException: Undefined array key "mitra_id"
+[Method: GET, Route: mitra/daftar-mitra-kegiatan/2]
+in APPPATH\Views\mitra\daftar_mitra_kegiatan.php on line 37.
+ 1 APPPATH\Views\mitra\daftar_mitra_kegiatan.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "mitra_id"', 'D:\\xampp\\htdocs\\mitra\\app\\Views\\mitra\\daftar_mitra_kegiatan.php', 37)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\mitra\\app\\Views\\mitra\\daftar_mitra_kegiatan.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('mitra/daftar_mitra_kegiatan', [], true)
+ 5 APPPATH\Controllers\Mitra.php(356): view('mitra/daftar_mitra_kegiatan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mitra->daftarMitraKegiatan('2')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitra))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 22:16:36 --> ErrorException: Undefined array key "mitra_id"
+[Method: GET, Route: mitra/daftar-mitra-kegiatan/2]
+in APPPATH\Views\mitra\daftar_mitra_kegiatan.php on line 37.
+ 1 APPPATH\Views\mitra\daftar_mitra_kegiatan.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "mitra_id"', 'D:\\xampp\\htdocs\\mitra\\app\\Views\\mitra\\daftar_mitra_kegiatan.php', 37)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\mitra\\app\\Views\\mitra\\daftar_mitra_kegiatan.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('mitra/daftar_mitra_kegiatan', [], true)
+ 5 APPPATH\Controllers\Mitra.php(356): view('mitra/daftar_mitra_kegiatan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mitra->daftarMitraKegiatan('2')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitra))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 22:16:59 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: mitra/daftar-mitra-kegiatan/2]
+in APPPATH\Views\mitra\daftar_mitra_kegiatan.php on line 37.
+ 1 APPPATH\Views\mitra\daftar_mitra_kegiatan.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'D:\\xampp\\htdocs\\mitra\\app\\Views\\mitra\\daftar_mitra_kegiatan.php', 37)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\mitra\\app\\Views\\mitra\\daftar_mitra_kegiatan.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('mitra/daftar_mitra_kegiatan', [], true)
+ 5 APPPATH\Controllers\Mitra.php(356): view('mitra/daftar_mitra_kegiatan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mitra->daftarMitraKegiatan('2')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitra))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 22:24:04 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: mitra/daftar-mitra-kegiatan/2]
+in APPPATH\Views\mitra\daftar_mitra_kegiatan.php on line 37.
+ 1 APPPATH\Views\mitra\daftar_mitra_kegiatan.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'D:\\xampp\\htdocs\\mitra\\app\\Views\\mitra\\daftar_mitra_kegiatan.php', 37)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\mitra\\app\\Views\\mitra\\daftar_mitra_kegiatan.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('mitra/daftar_mitra_kegiatan', [], true)
+ 5 APPPATH\Controllers\Mitra.php(356): view('mitra/daftar_mitra_kegiatan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Mitra->daftarMitraKegiatan('2')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mitra))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(55): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

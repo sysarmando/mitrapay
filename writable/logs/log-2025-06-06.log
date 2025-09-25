@@ -1,0 +1,248 @@
+DEBUG - 2025-06-06 00:00:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 00:00:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 00:00:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 00:01:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 00:02:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 00:02:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 00:02:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 00:04:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 00:04:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 00:04:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 00:04:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 00:05:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 00:06:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 00:07:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 00:10:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 00:12:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 00:12:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 00:13:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 00:13:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 00:14:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 00:14:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 00:15:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 00:15:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 00:20:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 00:22:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 00:22:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 00:22:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 00:22:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 00:22:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 00:31:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 00:31:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 00:31:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 00:35:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 08:40:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 08:40:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 09:36:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-06 04:25:11 --> Error: Class "Locale" not found
+[Method: GET, Route: /]
+in SYSTEMPATH\CodeIgniter.php on line 189.
+ 1 SYSTEMPATH\Boot.php(321): CodeIgniter\CodeIgniter->initialize()
+ 2 SYSTEMPATH\Boot.php(66): CodeIgniter\Boot::initializeCodeIgniter()
+ 3 FCPATH\index.php(54): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-06 04:25:11 --> ErrorException: Uncaught Error: Class "Locale" not found in D:\xampp\htdocs\pemalu\system\Helpers\number_helper.php:142
+Stack trace:
+#0 D:\xampp\htdocs\pemalu\system\Helpers\number_helper.php(60): format_number(6.0, 2, NULL, Array)
+#1 D:\xampp\htdocs\pemalu\system\Debug\BaseExceptionHandler.php(154): number_to_size(6.0, 2)
+#2 D:\xampp\htdocs\pemalu\app\Views\errors\html\error_exception.php(408): CodeIgniter\Debug\BaseExceptionHandler::describeMemory(6291456)
+#3 D:\xampp\htdocs\pemalu\system\Debug\BaseExceptionHandler.php(266): include('D:\\xampp\\htdocs...')
+#4 D:\xampp\htdocs\pemalu\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#5 D:\xampp\htdocs\pemalu\system\Debug\ExceptionHandler.php(116): CodeIgniter\Debug\BaseExceptionHandler->render(Object(Error), 500, 'D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\pemalu\system\Debug\Exceptions.php(162): CodeIgniter\Debug\ExceptionHandler->handle(Object(Error), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#7 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#8 {main}
+  thrown
+【Previous Exception】
+Error
+Class "Locale" not found
+#0 D:\xampp\htdocs\pemalu\system\Boot.php(321): CodeIgniter\CodeIgniter->initialize()
+#1 D:\xampp\htdocs\pemalu\system\Boot.php(66): CodeIgniter\Boot::initializeCodeIgniter()
+#2 D:\xampp\htdocs\pemalu\public\index.php(54): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#3 {main}
+[Method: GET, Route: /]
+in SYSTEMPATH\Helpers\number_helper.php on line 142.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-06-06 04:34:22 --> Error: Class "Locale" not found
+[Method: GET, Route: /]
+in SYSTEMPATH\CodeIgniter.php on line 189.
+ 1 SYSTEMPATH\Boot.php(321): CodeIgniter\CodeIgniter->initialize()
+ 2 SYSTEMPATH\Boot.php(66): CodeIgniter\Boot::initializeCodeIgniter()
+ 3 FCPATH\index.php(54): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-06 04:34:22 --> ErrorException: Uncaught Error: Class "Locale" not found in D:\xampp\htdocs\pemalu\system\Helpers\number_helper.php:142
+Stack trace:
+#0 D:\xampp\htdocs\pemalu\system\Helpers\number_helper.php(60): format_number(6.0, 2, NULL, Array)
+#1 D:\xampp\htdocs\pemalu\system\Debug\BaseExceptionHandler.php(154): number_to_size(6.0, 2)
+#2 D:\xampp\htdocs\pemalu\app\Views\errors\html\error_exception.php(408): CodeIgniter\Debug\BaseExceptionHandler::describeMemory(6291456)
+#3 D:\xampp\htdocs\pemalu\system\Debug\BaseExceptionHandler.php(266): include('D:\\xampp\\htdocs...')
+#4 D:\xampp\htdocs\pemalu\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#5 D:\xampp\htdocs\pemalu\system\Debug\ExceptionHandler.php(116): CodeIgniter\Debug\BaseExceptionHandler->render(Object(Error), 500, 'D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\pemalu\system\Debug\Exceptions.php(162): CodeIgniter\Debug\ExceptionHandler->handle(Object(Error), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#7 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#8 {main}
+  thrown
+【Previous Exception】
+Error
+Class "Locale" not found
+#0 D:\xampp\htdocs\pemalu\system\Boot.php(321): CodeIgniter\CodeIgniter->initialize()
+#1 D:\xampp\htdocs\pemalu\system\Boot.php(66): CodeIgniter\Boot::initializeCodeIgniter()
+#2 D:\xampp\htdocs\pemalu\public\index.php(54): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#3 {main}
+[Method: GET, Route: /]
+in SYSTEMPATH\Helpers\number_helper.php on line 142.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-06-06 04:38:39 --> Error: Class "Locale" not found
+[Method: GET, Route: /]
+in SYSTEMPATH\CodeIgniter.php on line 189.
+ 1 SYSTEMPATH\Boot.php(321): CodeIgniter\CodeIgniter->initialize()
+ 2 SYSTEMPATH\Boot.php(66): CodeIgniter\Boot::initializeCodeIgniter()
+ 3 FCPATH\index.php(54): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-06 04:38:39 --> ErrorException: Uncaught Error: Class "Locale" not found in D:\xampp\htdocs\pemalu\system\Helpers\number_helper.php:142
+Stack trace:
+#0 D:\xampp\htdocs\pemalu\system\Helpers\number_helper.php(60): format_number(6.0, 2, NULL, Array)
+#1 D:\xampp\htdocs\pemalu\system\Debug\BaseExceptionHandler.php(154): number_to_size(6.0, 2)
+#2 D:\xampp\htdocs\pemalu\app\Views\errors\html\error_exception.php(408): CodeIgniter\Debug\BaseExceptionHandler::describeMemory(6291456)
+#3 D:\xampp\htdocs\pemalu\system\Debug\BaseExceptionHandler.php(266): include('D:\\xampp\\htdocs...')
+#4 D:\xampp\htdocs\pemalu\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#5 D:\xampp\htdocs\pemalu\system\Debug\ExceptionHandler.php(116): CodeIgniter\Debug\BaseExceptionHandler->render(Object(Error), 500, 'D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\pemalu\system\Debug\Exceptions.php(162): CodeIgniter\Debug\ExceptionHandler->handle(Object(Error), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#7 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#8 {main}
+  thrown
+【Previous Exception】
+Error
+Class "Locale" not found
+#0 D:\xampp\htdocs\pemalu\system\Boot.php(321): CodeIgniter\CodeIgniter->initialize()
+#1 D:\xampp\htdocs\pemalu\system\Boot.php(66): CodeIgniter\Boot::initializeCodeIgniter()
+#2 D:\xampp\htdocs\pemalu\public\index.php(54): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#3 {main}
+[Method: GET, Route: /]
+in SYSTEMPATH\Helpers\number_helper.php on line 142.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-06-06 04:38:49 --> Error: Class "Locale" not found
+[Method: GET, Route: /]
+in SYSTEMPATH\CodeIgniter.php on line 189.
+ 1 SYSTEMPATH\Boot.php(321): CodeIgniter\CodeIgniter->initialize()
+ 2 SYSTEMPATH\Boot.php(66): CodeIgniter\Boot::initializeCodeIgniter()
+ 3 FCPATH\index.php(54): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-06 04:38:49 --> ErrorException: Uncaught Error: Class "Locale" not found in D:\xampp\htdocs\pemalu\system\Helpers\number_helper.php:142
+Stack trace:
+#0 D:\xampp\htdocs\pemalu\system\Helpers\number_helper.php(60): format_number(6.0, 2, NULL, Array)
+#1 D:\xampp\htdocs\pemalu\system\Debug\BaseExceptionHandler.php(154): number_to_size(6.0, 2)
+#2 D:\xampp\htdocs\pemalu\app\Views\errors\html\error_exception.php(408): CodeIgniter\Debug\BaseExceptionHandler::describeMemory(6291456)
+#3 D:\xampp\htdocs\pemalu\system\Debug\BaseExceptionHandler.php(266): include('D:\\xampp\\htdocs...')
+#4 D:\xampp\htdocs\pemalu\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#5 D:\xampp\htdocs\pemalu\system\Debug\ExceptionHandler.php(116): CodeIgniter\Debug\BaseExceptionHandler->render(Object(Error), 500, 'D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\pemalu\system\Debug\Exceptions.php(162): CodeIgniter\Debug\ExceptionHandler->handle(Object(Error), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#7 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#8 {main}
+  thrown
+【Previous Exception】
+Error
+Class "Locale" not found
+#0 D:\xampp\htdocs\pemalu\system\Boot.php(321): CodeIgniter\CodeIgniter->initialize()
+#1 D:\xampp\htdocs\pemalu\system\Boot.php(66): CodeIgniter\Boot::initializeCodeIgniter()
+#2 D:\xampp\htdocs\pemalu\public\index.php(54): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#3 {main}
+[Method: GET, Route: /]
+in SYSTEMPATH\Helpers\number_helper.php on line 142.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-06-06 04:39:07 --> Error: Class "Locale" not found
+[Method: GET, Route: /]
+in SYSTEMPATH\CodeIgniter.php on line 189.
+ 1 SYSTEMPATH\Boot.php(321): CodeIgniter\CodeIgniter->initialize()
+ 2 SYSTEMPATH\Boot.php(66): CodeIgniter\Boot::initializeCodeIgniter()
+ 3 FCPATH\index.php(54): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-06 04:39:07 --> ErrorException: Uncaught Error: Class "Locale" not found in D:\xampp\htdocs\pemalu\system\Helpers\number_helper.php:142
+Stack trace:
+#0 D:\xampp\htdocs\pemalu\system\Helpers\number_helper.php(60): format_number(6.0, 2, NULL, Array)
+#1 D:\xampp\htdocs\pemalu\system\Debug\BaseExceptionHandler.php(154): number_to_size(6.0, 2)
+#2 D:\xampp\htdocs\pemalu\app\Views\errors\html\error_exception.php(408): CodeIgniter\Debug\BaseExceptionHandler::describeMemory(6291456)
+#3 D:\xampp\htdocs\pemalu\system\Debug\BaseExceptionHandler.php(266): include('D:\\xampp\\htdocs...')
+#4 D:\xampp\htdocs\pemalu\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#5 D:\xampp\htdocs\pemalu\system\Debug\ExceptionHandler.php(116): CodeIgniter\Debug\BaseExceptionHandler->render(Object(Error), 500, 'D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\pemalu\system\Debug\Exceptions.php(162): CodeIgniter\Debug\ExceptionHandler->handle(Object(Error), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#7 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#8 {main}
+  thrown
+【Previous Exception】
+Error
+Class "Locale" not found
+#0 D:\xampp\htdocs\pemalu\system\Boot.php(321): CodeIgniter\CodeIgniter->initialize()
+#1 D:\xampp\htdocs\pemalu\system\Boot.php(66): CodeIgniter\Boot::initializeCodeIgniter()
+#2 D:\xampp\htdocs\pemalu\public\index.php(54): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#3 {main}
+[Method: GET, Route: /]
+in SYSTEMPATH\Helpers\number_helper.php on line 142.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-06-06 04:43:52 --> Error: Class "Locale" not found
+[Method: GET, Route: /]
+in SYSTEMPATH\CodeIgniter.php on line 189.
+ 1 SYSTEMPATH\Boot.php(321): CodeIgniter\CodeIgniter->initialize()
+ 2 SYSTEMPATH\Boot.php(66): CodeIgniter\Boot::initializeCodeIgniter()
+ 3 FCPATH\index.php(54): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-06 04:43:52 --> ErrorException: Uncaught Error: Class "Locale" not found in D:\xampp\htdocs\pemalu\system\Helpers\number_helper.php:142
+Stack trace:
+#0 D:\xampp\htdocs\pemalu\system\Helpers\number_helper.php(60): format_number(6.0, 2, NULL, Array)
+#1 D:\xampp\htdocs\pemalu\system\Debug\BaseExceptionHandler.php(154): number_to_size(6.0, 2)
+#2 D:\xampp\htdocs\pemalu\app\Views\errors\html\error_exception.php(408): CodeIgniter\Debug\BaseExceptionHandler::describeMemory(6291456)
+#3 D:\xampp\htdocs\pemalu\system\Debug\BaseExceptionHandler.php(266): include('D:\\xampp\\htdocs...')
+#4 D:\xampp\htdocs\pemalu\system\Debug\BaseExceptionHandler.php(269): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#5 D:\xampp\htdocs\pemalu\system\Debug\ExceptionHandler.php(116): CodeIgniter\Debug\BaseExceptionHandler->render(Object(Error), 500, 'D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\pemalu\system\Debug\Exceptions.php(162): CodeIgniter\Debug\ExceptionHandler->handle(Object(Error), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#7 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#8 {main}
+  thrown
+【Previous Exception】
+Error
+Class "Locale" not found
+#0 D:\xampp\htdocs\pemalu\system\Boot.php(321): CodeIgniter\CodeIgniter->initialize()
+#1 D:\xampp\htdocs\pemalu\system\Boot.php(66): CodeIgniter\Boot::initializeCodeIgniter()
+#2 D:\xampp\htdocs\pemalu\public\index.php(54): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#3 {main}
+[Method: GET, Route: /]
+in SYSTEMPATH\Helpers\number_helper.php on line 142.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+DEBUG - 2025-06-06 11:46:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 11:49:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 11:49:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 11:49:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 11:49:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 12:01:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 12:02:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 12:16:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 12:19:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 13:33:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 13:33:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 14:54:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 14:55:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 14:55:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 14:55:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 17:54:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 17:55:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 17:56:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 17:56:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 22:22:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 22:23:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 22:23:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 22:23:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 22:24:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 22:25:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 22:26:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 22:33:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 22:35:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 22:48:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 22:51:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 22:51:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 22:52:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 22:52:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 22:52:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 22:52:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 22:52:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 22:52:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 22:52:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 22:52:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 22:53:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 23:01:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 23:14:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 23:14:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-06 23:17:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

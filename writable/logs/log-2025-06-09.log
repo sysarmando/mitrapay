@@ -1,0 +1,15 @@
+DEBUG - 2025-06-09 11:02:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-09 12:46:29 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: /]
+in SYSTEMPATH\Debug\Toolbar.php on line 217.
+ 1 SYSTEMPATH\Debug\Toolbar.php(217): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\xampp\\htdocs\\pemalu\\system\\Debug\\Toolbar.php', 217)
+ 2 SYSTEMPATH\Debug\Toolbar.php(200): CodeIgniter\Debug\Toolbar->renderTimelineRecursive([...], 1749440788.041787, 6, 10, [], 0)
+ 3 SYSTEMPATH\Debug\Toolbar\Views\toolbar.tpl.php(102): CodeIgniter\Debug\Toolbar->renderTimeline([...], 1749440788.041787, 6, 10, [])
+ 4 SYSTEMPATH\Debug\Toolbar.php(533): include('D:\\xampp\\htdocs\\pemalu\\system\\Debug\\Toolbar\\Views\\toolbar.tpl.php')
+ 5 SYSTEMPATH\Debug\Toolbar.php(496): CodeIgniter\Debug\Toolbar->format([...], 'html')
+ 6 APPPATH\Config\Events.php(47): CodeIgniter\Debug\Toolbar->respond()
+ 7 SYSTEMPATH\Events\Events.php(155): CodeIgniter\Events\Events::Config\{closure}()
+ 8 SYSTEMPATH\CodeIgniter.php(339): CodeIgniter\Events\Events::trigger('pre_system')
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(54): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
