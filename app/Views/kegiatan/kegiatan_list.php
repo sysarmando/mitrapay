@@ -58,9 +58,8 @@
                                     <a href="<?= base_url('mitra/daftar-mitra-kegiatan/' . $k['id']) ?>" class="btn btn-sm btn-info mb-1">
                                         <i class="fas fa-users"></i> Daftar Mitra
                                     </a>
-                                    <a href="<?= base_url('mitra/form-export-honor/' . $k['id']) ?>" class="btn btn-sm btn-success">
-                                        <i class="fas fa-file-excel"></i> Export Honor
-                                    </a>
+                                    
+                                    
                                     <?php if ($role === '99'): ?>
                                         <a href="<?= base_url('mitra/kegiatan/hapus/' . $k['id']) ?>"
                                             class="btn btn-sm btn-danger mb-1"

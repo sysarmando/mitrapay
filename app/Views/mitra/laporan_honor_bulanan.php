@@ -3,7 +3,7 @@
 
 <section class="app-content-header">
   <div class="container-fluid">
-    <h1>Laporan Honor Mitra per Bulan Tahun <?= date("Y") ?></h1>
+    <h1>Monitoring Honor Mitra per Bulan Tahun <?= date("Y") ?></h1>
   </div>
 </section>
 

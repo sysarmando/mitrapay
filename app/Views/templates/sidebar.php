@@ -30,7 +30,7 @@
           <li class="nav-item">
             <a href="<?= base_url('mitra/kegiatan') ?>" class="nav-link">
               <i class="nav-icon fas fa-briefcase"></i>
-              <p>Daftar Kegiatan</p>
+              <p>Daftar Kegiatan Statistik</p>
             </a>
           </li>
 
